@@ -1,0 +1,62 @@
+{
+  "verdict": "FORMAT-AUDIT-UNCERTAIN",
+  "old_format_parser_all_tasks": 1051,
+  "old_format_parser_fd_rows": 1049,
+  "format_subtypes": {
+    "MULTIPLE_TOOL_CALLS_ONE_TURN": 1040,
+    "GENERATION_LENGTH_TRUNCATED": 9
+  },
+  "semantic_validity": {
+    "TRUE_FAILURE": 24,
+    "SEMANTICALLY_VALID_PARALLEL": 123,
+    "PARTIALLY_VALID": 7,
+    "PARSER_ARTIFACT_CONFIRMED": 0,
+    "UNCERTAIN": 895
+  },
+  "disposition": {
+    "KEEP_AS_FD": 9,
+    "DROP_FROM_FD": 123,
+    "RECLASSIFY_AND_KEEP": 22,
+    "UNCERTAIN_EXCLUDE": 895
+  },
+  "counterfactual_replay": {
+    "selected": 125,
+    "passed": 123,
+    "uncertain_response_mismatch": 2,
+    "replay_records_sha256": "89926f3e2b5adf8d9b58551f509c428b8b6dd3436ccd5d17a375aca189fd2127"
+  },
+  "dataset_effect": {
+    "old_fd_total": 1936,
+    "corrected_conservative_fd_total": 918,
+    "old_wrong_argument": 398,
+    "corrected_wrong_argument": 407,
+    "added_wrong_argument_from_format": 9,
+    "old_step1": 1734,
+    "corrected_step1": 716,
+    "corrected_step2": 192,
+    "corrected_step3": 8,
+    "corrected_step4plus": 2,
+    "corrected_depth_ge2": 202,
+    "corrected_mean_step": 1.234,
+    "corrected_median_step": 1.0,
+    "corrected_p75_step": 1.0
+  },
+  "structural_sanity": {
+    "true_failure_checked": 20,
+    "valid_parallel_checked": 20,
+    "reclassified_checked": 20,
+    "wrong_argument_reclassified_checked": 9,
+    "parser_artifact_available": 0,
+    "structural_errors": 0
+  },
+  "source_fd_sha256": "5304b0b4f4b3ee8527a56d7c74a0e0b338bc6db0b8a2d8f830856318bc71b7ac",
+  "q1_multi_tool_policy_failure": "PARTIAL_OR_UNRESOLVED",
+  "q2_exact_sequential_false_positive": "YES_AT_LEAST_123_UNDER_PARALLEL_POLICY",
+  "q3_training_design_ready": "NOT_YET",
+  "limitations": [
+    "Actual Cycle-3 collector rejects all multi-call turns; installed verl/SGLang rollout supports concurrent calls.",
+    "Only exact read-only gold-prefix alternatives were certified; 895 uncertain cases were excluded, not judged false positives.",
+    "Raw generation tokens were not saved, so parser-extraction artifacts cannot be proven or ruled out.",
+    "Structural sanity is not manual semantic validation."
+  ]
+}

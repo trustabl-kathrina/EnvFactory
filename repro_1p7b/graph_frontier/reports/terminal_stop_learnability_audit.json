@@ -1,0 +1,227 @@
+{
+  "verdict": "TERMINAL-STOP-TRAINER-FIX",
+  "scope": "CPU-only feasibility; no training, inference, or new task generation",
+  "model": {
+    "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/checkpoints/graph_frontier_dynamic_v1_8k_1p7b",
+    "type": "qwen3",
+    "tokenizer_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/checkpoints/graph_frontier_dynamic_v1_8k_1p7b",
+    "chat_template_sha256": "a55ee1b1660128b7098723e0abcd92caa0788061051c62d51cbe87d9cf1974d8",
+    "eos_token": "<|im_end|>",
+    "eos_token_id": 151645,
+    "generation_eos_ids": [
+      151645,
+      151643
+    ]
+  },
+  "example": {
+    "task_id": "gf-rich-7372af308535cceb8e11",
+    "source": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/logs/first_divergence_terminal_v2/terminal_dataset_attempt4/dataset.jsonl",
+    "replay_valid": true,
+    "final_state_match": true,
+    "history_roles": [
+      "user",
+      "assistant",
+      "tool",
+      "assistant",
+      "tool"
+    ],
+    "last_observation": "{}",
+    "prompt_tokens": 2074,
+    "prompt_suffix": "<|im_start|>user\n<tool_response>\n{}\n</tool_response><|im_end|>\n<|im_start|>assistant\n<think>\n\n</think>\n\n",
+    "cases": {
+      "A_existing": {
+        "rendered_suffix": "The requested operations were completed successfully.<|im_end|>\n",
+        "target_count": 9,
+        "target_ids": [
+          785,
+          11223,
+          7525,
+          1033,
+          8145,
+          7790,
+          13,
+          151645,
+          198
+        ],
+        "target_tokens": [
+          "The",
+          "Ġrequested",
+          "Ġoperations",
+          "Ġwere",
+          "Ġcompleted",
+          "Ġsuccessfully",
+          ".",
+          "<|im_end|>",
+          "Ċ"
+        ]
+      },
+      "B_empty": {
+        "rendered_suffix": "<|im_end|>\n",
+        "target_count": 2,
+        "target_ids": [
+          151645,
+          198
+        ],
+        "target_tokens": [
+          "<|im_end|>",
+          "Ċ"
+        ]
+      },
+      "C_minimal": {
+        "rendered_suffix": "Done.<|im_end|>\n",
+        "target_count": 4,
+        "target_ids": [
+          17453,
+          13,
+          151645,
+          198
+        ],
+        "target_tokens": [
+          "Done",
+          ".",
+          "<|im_end|>",
+          "Ċ"
+        ]
+      }
+    },
+    "token_table": [
+      {
+        "decoded": "\n",
+        "label_existing_all_suffix": -100,
+        "label_proposed_eos_only": -100,
+        "loss_mask_eos_only": false,
+        "position": 2069,
+        "token": "Ċ",
+        "token_id": 198
+      },
+      {
+        "decoded": "<think>",
+        "label_existing_all_suffix": -100,
+        "label_proposed_eos_only": -100,
+        "loss_mask_eos_only": false,
+        "position": 2070,
+        "token": "<think>",
+        "token_id": 151667
+      },
+      {
+        "decoded": "\n\n",
+        "label_existing_all_suffix": -100,
+        "label_proposed_eos_only": -100,
+        "loss_mask_eos_only": false,
+        "position": 2071,
+        "token": "ĊĊ",
+        "token_id": 271
+      },
+      {
+        "decoded": "</think>",
+        "label_existing_all_suffix": -100,
+        "label_proposed_eos_only": -100,
+        "loss_mask_eos_only": false,
+        "position": 2072,
+        "token": "</think>",
+        "token_id": 151668
+      },
+      {
+        "decoded": "\n\n",
+        "label_existing_all_suffix": -100,
+        "label_proposed_eos_only": -100,
+        "loss_mask_eos_only": false,
+        "position": 2073,
+        "token": "ĊĊ",
+        "token_id": 271
+      },
+      {
+        "decoded": "<|im_end|>",
+        "label_existing_all_suffix": 151645,
+        "label_proposed_eos_only": 151645,
+        "loss_mask_eos_only": true,
+        "position": 2074,
+        "token": "<|im_end|>",
+        "token_id": 151645
+      },
+      {
+        "decoded": "\n",
+        "label_existing_all_suffix": 198,
+        "label_proposed_eos_only": -100,
+        "loss_mask_eos_only": false,
+        "position": 2075,
+        "token": "Ċ",
+        "token_id": 198
+      }
+    ],
+    "attention_mask_tail": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "preprocessing": {
+    "formal_encoder_accepts_empty": false,
+    "formal_encoder_error": "terminal target must be existing natural language",
+    "direct_same_pipeline_two_token_mask_valid": true,
+    "direct_active_target_tokens": 2,
+    "proposed_eos_only_active_target_tokens": 1,
+    "formal_validator_accepts_eos_only": false,
+    "formal_validator_error": "assistant-only CE mask invalid: gf-rich-7372af308535cceb8e11",
+    "loss_sanity_cpu_uniform_logit_ce": 11.929455757141113,
+    "loss_sanity_is_model_forward": false
+  },
+  "runtime": {
+    "sglang_ignore_eos_default": false,
+    "sglang_eos_stop_branch": true,
+    "chat_skip_special_tokens_default": true,
+    "empty_parser_kind": "final",
+    "sglang_qwen25_empty_calls": [],
+    "sglang_qwen25_empty_normal_text": "",
+    "querygen_empty_non_think": "",
+    "env_step_empty_final_terminates": true,
+    "empty_final_stored_as_unknown_in_trace": true
+  },
+  "evaluators": {
+    "official_envfactory": {
+      "nonempty_text_required": false,
+      "success_basis": "official trace and final state",
+      "empty_final_protocol_accepted": true
+    },
+    "Frozen300": {
+      "nonempty_text_required": false,
+      "success_basis": "valid + gold nodes + dependency edges + final state",
+      "empty_final_protocol_accepted_by_local_code": true
+    },
+    "Rich24": {
+      "nonempty_text_required": false,
+      "success_basis": "official trace and final state via collector",
+      "empty_final_protocol_accepted": true
+    }
+  },
+  "official_rl": {
+    "strict_replay_success_tasks": 2159,
+    "clean_fd_candidate_tasks": 2158,
+    "can_supply_fd": true,
+    "can_supply_terminal_stop_after_builder_and_trainer_fix": true,
+    "ready_without_fix": false,
+    "missing_gold_final_natural_language_no_longer_fundamental_stop_label_blocker": true,
+    "requires_typed_history_reconstruction": true
+  },
+  "minimal_fix": [
+    "Add isolated terminal_stop target type: empty assistant content and zero tool calls are legal.",
+    "Use the existing Dynamic-v1 tokenizer and chat template; require suffix begins with EOS 151645 and contains only template whitespace thereafter.",
+    "Mask all history and the trailing newline; label only EOS. Preserve the current tool-call target path.",
+    "Change target-aware validator to permit this EOS-only suffix mask while requiring exactly one active EOS label.",
+    "Build replay-gated terminal prefixes and tool schemas for official RL in a separate frozen source; keep old datasets and evaluator untouched."
+  ],
+  "limitations": [
+    "Current formal encoder rejects empty natural language and trainer validator rejects masking the post-EOS newline; this is not a ready-to-train dataset.",
+    "Direct two-token suffix labels already give EOS CE signal but also optimize newline; pure stop requires the small validator/mask change.",
+    "The CPU CE value uses uniform synthetic logits and is not a real model forward or proof of behavior change.",
+    "Installed SGLang code and local parsers support EOS/empty final; no live model generation test was run.",
+    "Official RL release lacks persisted typed observations; selected tasks need replay-backed terminal-prefix construction and contamination gates.",
+    "Empty content is recorded as unknown in the EnvFactory trace, although current official reward ignores response text.",
+    "A future text-answer evaluator could impose a different constraint; current three evaluators do not."
+  ]
+}
+

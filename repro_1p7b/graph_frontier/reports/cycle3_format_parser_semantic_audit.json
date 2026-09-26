@@ -1,0 +1,66 @@
+{
+  "corrected_depth": {
+    "count": 918,
+    "depth_ge2": 202,
+    "mean": 1.234,
+    "median": 1.0,
+    "p75": 1.0,
+    "step1": 716,
+    "step2": 192,
+    "step3": 8,
+    "step4plus": 2
+  },
+  "corrected_failure_taxonomy": {
+    "DEPENDENCY_VIOLATION": 1,
+    "LOOP_OR_REPEAT": 3,
+    "PREMATURE_STOP": 153,
+    "TRUE_PROTOCOL_FORMAT_ERROR": 9,
+    "WRONG_ARGUMENT": 398,
+    "WRONG_ARGUMENT_IN_MULTI_CALL": 21,
+    "WRONG_TOOL": 333
+  },
+  "corrected_fd_total": 918,
+  "format_disposition": {
+    "DROP_FROM_FD": 123,
+    "KEEP_AS_FD": 9,
+    "RECLASSIFY_AND_KEEP": 22,
+    "UNCERTAIN_EXCLUDE": 895
+  },
+  "format_semantic_validity": {
+    "PARTIALLY_VALID": 7,
+    "SEMANTICALLY_VALID_PARALLEL": 123,
+    "TRUE_FAILURE": 24,
+    "UNCERTAIN": 895
+  },
+  "format_subtypes": {
+    "GENERATION_LENGTH_TRUNCATED": 9,
+    "MULTIPLE_TOOL_CALLS_ONE_TURN": 1040
+  },
+  "new_wrong_argument": 419,
+  "old_depth": {
+    "count": 1936,
+    "depth_ge2": 202,
+    "mean": 1.111,
+    "median": 1.0,
+    "p75": 1.0,
+    "step1": 1734,
+    "step2": 192,
+    "step3": 8,
+    "step4plus": 2
+  },
+  "old_fd_total": 1936,
+  "old_format_all_attempted": 1051,
+  "old_format_fd": 1049,
+  "old_wrong_argument": 398,
+  "protocol": {
+    "cycle3_collector": "rejects len(tool_calls)>1 as parallel_tool_calls and executes none",
+    "raw_model_tokens_available": false,
+    "verl_sglang_rollout": "asyncio.gather executes parsed calls concurrently; no max_parallel_calls guard found in inspected block"
+  },
+  "replay_candidates": 125,
+  "replay_passed": 123,
+  "source_fd_sha256": "5304b0b4f4b3ee8527a56d7c74a0e0b338bc6db0b8a2d8f830856318bc71b7ac",
+  "source_plan_sha256": "bc167d54dd289259d3ef54912ed1a660d67237e92f8631ef3991c30bddd16e06",
+  "verdict": "FORMAT-AUDIT-UNCERTAIN",
+  "wrong_argument_added_from_format": 21
+}

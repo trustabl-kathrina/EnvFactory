@@ -31,6 +31,19 @@ def jsonl(path: Path) -> list[dict]:
 
 def validate_mask(row: dict) -> None:
     p = row["prompt_tokens"]
+    if row.get("target_type") == "terminal_stop":
+        ids, labels = row["input_ids"], row["labels"]
+        end_id = row.get("assistant_end_token_id")
+        if (
+            len(ids) != len(labels) or row["total_tokens"] != len(ids)
+            or p <= 0 or p >= len(ids) or len(ids) > 16384
+            or labels[:p] != [-100] * p or end_id != 151645
+            or ids[p] != end_id or labels[p] != end_id
+            or any(label != -100 for label in labels[p + 1:])
+            or sum(label != -100 for label in labels) != 1
+        ):
+            raise RuntimeError("terminal-stop EOS-only CE mask invalid: " + row["task_id"])
+        return
     if (
         len(row["input_ids"]) != len(row["labels"])
         or row["total_tokens"] != len(row["input_ids"])
@@ -138,8 +151,57 @@ def load_and_schedule(frozen_dir: Path, model_path: Path, *,
     return selected, plan
 
 
-def train(frozen_dir: Path, model_path: Path, output: Path, logs: Path, *,
-          ratio: int, steps: int) -> dict | None:
+def load_smoke_and_schedule(smoke_dir: Path, model_path: Path, steps: int) -> tuple[list[dict], dict]:
+    """Smoke-only data lock; the frozen v2 schedule above remains unchanged."""
+    if steps not in (4, 6, 8) or model_path.resolve() != MODEL.resolve():
+        raise RuntimeError("terminal-stop smoke requires 4-8 steps and original Dynamic-v1")
+    lock = json.loads((smoke_dir / "manifest.json").read_text())
+    rows = jsonl(smoke_dir / "dataset.jsonl")
+    if (
+        lock.get("status") != "DATA_READY"
+        or lock.get("schema_version") != "terminal_stop_smoke_data_v1"
+        or lock.get("dataset_sha256") != sha256(smoke_dir / "dataset.jsonl")
+        or lock.get("tokenizer_json_sha256") != sha256(MODEL / "tokenizer.json")
+        or lock.get("fd_source_sha256") != sha256(FD_SOURCE / "dataset.jsonl")
+        or lock.get("frozen300_overlap") != 0 or lock.get("rich24_overlap") != 0
+        or len(rows) != 32 or len({r["task_id"] for r in rows}) != 32
+    ):
+        raise RuntimeError("terminal-stop smoke data lock failed")
+    fd = sorted((r for r in rows if r.get("target_type") == "first_divergence_tool"),
+                key=lambda r: r["task_id"])
+    stop = sorted((r for r in rows if r.get("target_type") == "terminal_stop"),
+                  key=lambda r: r["task_id"])
+    if len(fd) != 16 or len(stop) != 16:
+        raise RuntimeError("smoke requires 16 verified FD and 16 terminal-stop rows")
+    for row in rows:
+        validate_mask(row)
+    selected = [row for step in range(steps) for row in (fd[step], stop[step])]
+    plan = {
+        "schema_version": "terminal_stop_smoke_ddp_plan_v1",
+        "initialization_checkpoint": str(MODEL),
+        "initialization_weights_sha256": sha256(MODEL / "model.safetensors"),
+        "fd_dataset_sha256": lock["fd_source_sha256"],
+        "terminal_ce_dataset_sha256": lock["dataset_sha256"],
+        "smoke_dataset_sha256": lock["dataset_sha256"],
+        "ratio_target": "1:1",
+        "exposure_counts": {"first_divergence_tool": steps, "terminal_stop": steps},
+        "global_steps": steps, "world_size": WORLD_SIZE, "per_rank_batch_size": 1,
+        "learning_rate": LR, "optimizer": "AdamW", "weight_decay": 0,
+        "precision": "bfloat16", "gradient_checkpointing": True, "seed": SEED,
+        "schedule": [{
+            "step": step + 1, "rank0_task": fd[step]["task_id"],
+            "rank1_task": stop[step]["task_id"],
+            "rank0_target_type": "first_divergence_tool",
+            "rank1_target_type": "terminal_stop",
+            "rank1_active_label_count": 1,
+            "rank1_assistant_end_token_id": stop[step]["assistant_end_token_id"],
+        } for step in range(steps)],
+    }
+    return selected, plan
+
+
+def train(frozen_dir: Path | None, model_path: Path, output: Path, logs: Path, *,
+          ratio: int | None, steps: int, smoke_dir: Path | None = None) -> dict | None:
     os.environ.setdefault("CUDA_HOME", str(Path(sys.executable).resolve().parents[1]))
     os.environ["PATH"] = str(Path(os.environ["CUDA_HOME"]) / "bin") + ":" + os.environ.get("PATH", "")
     import torch
@@ -154,7 +216,14 @@ def train(frozen_dir: Path, model_path: Path, output: Path, logs: Path, *,
         raise RuntimeError("requires exactly two local GPUs")
     if output.exists() or (rank == 0 and logs.exists()):
         raise RuntimeError("refusing to overwrite training output/logs")
-    selected, plan = load_and_schedule(frozen_dir, model_path, ratio=ratio, steps=steps)
+    if smoke_dir is None:
+        if frozen_dir is None or ratio is None or steps not in (16, 64):
+            raise RuntimeError("formal v2 protocol requires frozen data and 16/64 steps")
+        selected, plan = load_and_schedule(frozen_dir, model_path, ratio=ratio, steps=steps)
+    else:
+        if frozen_dir is not None or ratio is not None:
+            raise RuntimeError("smoke data cannot be mixed with frozen v2 protocol")
+        selected, plan = load_smoke_and_schedule(smoke_dir, model_path, steps)
     torch.cuda.set_device(local_rank)
     torch.manual_seed(SEED)
     torch.cuda.manual_seed_all(SEED)
@@ -194,6 +263,11 @@ def train(frozen_dir: Path, model_path: Path, output: Path, logs: Path, *,
             raise RuntimeError(f"nonfinite gradient at step {step + 1}")
         optimizer.step()
         torch.cuda.synchronize(local_rank)
+        rank_losses = None
+        if smoke_dir is not None:
+            rank_losses = [torch.zeros((), dtype=torch.float32, device=local_rank)
+                           for _ in range(world_size)]
+            dist.all_gather(rank_losses, loss.detach().float())
         losses = loss.detach().float().clone()
         dist.all_reduce(losses, op=dist.ReduceOp.SUM)
         losses /= world_size
@@ -209,6 +283,11 @@ def train(frozen_dir: Path, model_path: Path, output: Path, logs: Path, *,
                 "rank1_tokens": selected[step * 2 + 1]["total_tokens"],
                 "rank0_peak_gb": round(torch.cuda.max_memory_allocated(local_rank)/(1024**3), 3),
             }
+            if rank_losses is not None:
+                record["rank0_fd_loss"] = float(rank_losses[0].cpu())
+                record["rank1_terminal_stop_loss"] = float(rank_losses[1].cpu())
+                record["rank1_active_labels"] = 1
+                record["learning_rate"] = LR
             records.append(record)
             with (logs / "metrics.jsonl").open("a", encoding="utf-8") as out:
                 out.write(json.dumps(record, sort_keys=True) + "\n")
@@ -224,9 +303,15 @@ def train(frozen_dir: Path, model_path: Path, output: Path, logs: Path, *,
         tokenizer = AutoTokenizer.from_pretrained(model_path, trust_remote_code=True)
         tokenizer.save_pretrained(output)
         result = {
-            "schema_version": "first_divergence_terminal_v2_ddp_result",
+            "schema_version": ("terminal_stop_smoke_ddp_result_v1" if smoke_dir is not None
+                               else "first_divergence_terminal_v2_ddp_result"),
             "status": "TRAINED", "global_steps": steps,
-            "ratio_target": f"1:{ratio}",
+            "ratio_target": plan["ratio_target"],
+            "exposure_counts": plan["exposure_counts"],
+            "smoke_dataset_sha256": plan.get("smoke_dataset_sha256"),
+            "terminal_stop_loss_finite": (all(
+                record["rank1_terminal_stop_loss"] == record["rank1_terminal_stop_loss"]
+                for record in records) if smoke_dir is not None else None),
             "world_size": world_size, "full_parameter": True,
             "all_loss_finite": True, "all_grad_finite": True,
             "first_mean_loss": records[0]["mean_loss"],
@@ -249,15 +334,16 @@ def train(frozen_dir: Path, model_path: Path, output: Path, logs: Path, *,
 
 def main() -> None:
     parser = argparse.ArgumentParser()
-    parser.add_argument("--frozen-dir", type=Path, required=True)
+    parser.add_argument("--frozen-dir", type=Path)
+    parser.add_argument("--smoke-dir", type=Path)
     parser.add_argument("--model-path", type=Path, required=True)
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--logs", type=Path, required=True)
-    parser.add_argument("--ratio", type=int, choices=(1, 2), required=True)
-    parser.add_argument("--steps", type=int, choices=(16, 64), required=True)
+    parser.add_argument("--ratio", type=int, choices=(1, 2))
+    parser.add_argument("--steps", type=int, choices=(4, 6, 8, 16, 64), required=True)
     args = parser.parse_args()
     train(args.frozen_dir, args.model_path, args.output, args.logs,
-          ratio=args.ratio, steps=args.steps)
+          ratio=args.ratio, steps=args.steps, smoke_dir=args.smoke_dir)
 
 
 if __name__ == "__main__":

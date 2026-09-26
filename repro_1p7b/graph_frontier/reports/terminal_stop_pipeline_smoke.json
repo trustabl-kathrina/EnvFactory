@@ -1,0 +1,71 @@
+{
+  "verdict": "TERMINAL-STOP-PIPELINE-READY",
+  "date": "2026-09-25",
+  "implementation": {
+    "assistant_end_token": "<|im_end|>",
+    "assistant_end_token_id": 151645,
+    "active_terminal_labels": 1,
+    "trailing_newline_masked": true,
+    "new_stop_token": false,
+    "tokenizer_changed": false,
+    "inference_protocol_changed": false,
+    "ordinary_fd_mask_changed": false
+  },
+  "tests": {
+    "new_passed": 6,
+    "existing_targeted_passed": 20,
+    "cpu_collator_passed": true,
+    "collator_shape": [32, 2744],
+    "truncated": false
+  },
+  "dataset": {
+    "fd_samples": 16,
+    "terminal_stop_samples": 16,
+    "unique_tasks": 32,
+    "environments": 25,
+    "terminal_environments": 16,
+    "frozen300_overlap": 0,
+    "rich24_overlap": 0,
+    "fd_types": {
+      "wrong_arguments": 6,
+      "wrong_tool": 5,
+      "premature_stop": 5
+    },
+    "dataset_sha256": "f5563df43d088993371aa2730e6d4f9ce48d05621c8459281cb93aba991b709f"
+  },
+  "training": {
+    "initialization": "original Dynamic-v1",
+    "gpus": [0, 1],
+    "gpu_model": "A100-SXM4-40GB",
+    "full_parameter": true,
+    "precision": "bfloat16",
+    "optimizer": "AdamW",
+    "steps": 8,
+    "fd_seen": 8,
+    "terminal_stop_seen": 8,
+    "loss_finite": true,
+    "terminal_stop_loss_finite": true,
+    "gradient_norm_finite": true,
+    "checkpoint_saved": true,
+    "checkpoint_weights_sha256": "bcd965cc6c3631ca494b032c16fbf9f455d08aa5afd7cc2010f8ab5f2d1e2fb8",
+    "peak_gpu_gib": 19.275
+  },
+  "inference_sanity": {
+    "states": 2,
+    "generations": 4,
+    "assistant_end_generations": 4,
+    "parser_errors": 0,
+    "agentloop_final": 3,
+    "agentloop_typed_tool": 1,
+    "smoke_checkpoint_final": 1,
+    "smoke_checkpoint_tool": 1,
+    "effectiveness_evaluation": false
+  },
+  "git": {
+    "preexisting_staged_files_preserved": 154,
+    "commit": false,
+    "push": false,
+    "full_training": false,
+    "official_rl_mass_rollout": false
+  }
+}

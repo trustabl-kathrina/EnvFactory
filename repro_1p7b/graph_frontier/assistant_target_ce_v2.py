@@ -4,7 +4,7 @@ from __future__ import annotations
 from typing import Any, Mapping
 
 MAX_LENGTH = 16384
-TARGET_TYPES = frozenset({"first_divergence_tool", "terminal_final"})
+TARGET_TYPES = frozenset({"first_divergence_tool", "terminal_final", "terminal_stop"})
 
 
 def encode_assistant_target(
@@ -24,6 +24,9 @@ def encode_assistant_target(
     if target_type == "terminal_final":
         if has_calls or not isinstance(assistant_target.get("content"), str) or not assistant_target["content"].strip():
             raise ValueError("terminal target must be existing natural language")
+    elif target_type == "terminal_stop":
+        if has_calls or assistant_target.get("content") != "":
+            raise ValueError("terminal-stop requires an empty assistant turn")
     elif not has_calls:
         raise ValueError("first-divergence target must be a structured tool call")
     kwargs = {"tools": tool_schema, "tokenize": True, "enable_thinking": False}
@@ -43,6 +46,15 @@ def encode_assistant_target(
     if target_type == "first_divergence_tool" and "<tool_call>" not in suffix:
         raise ValueError("tool target did not serialize as tool call")
     labels = [-100] * len(prompt_ids) + full_ids[len(prompt_ids):]
+    assistant_end_token_id = None
+    if target_type == "terminal_stop":
+        assistant_end_token_id = tokenizer.eos_token_id
+        rendered = full_ids[len(prompt_ids):]
+        if assistant_end_token_id != 151645 or not rendered or rendered[0] != assistant_end_token_id:
+            raise ValueError("current Qwen3 assistant-end token mismatch")
+        if tokenizer.decode(rendered[1:], skip_special_tokens=False).strip():
+            raise ValueError("terminal-stop suffix contains non-whitespace content")
+        labels[len(prompt_ids) + 1:] = [-100] * (len(rendered) - 1)
     return {
         "schema_version": "assistant_target_ce_v2",
         "task_id": task_id,
@@ -51,7 +63,8 @@ def encode_assistant_target(
         "input_ids": full_ids,
         "labels": labels,
         "prompt_tokens": len(prompt_ids),
-        "target_tokens": len(full_ids) - len(prompt_ids),
+        "target_tokens": 1 if target_type == "terminal_stop" else len(full_ids) - len(prompt_ids),
+        "assistant_end_token_id": assistant_end_token_id,
         "total_tokens": len(full_ids),
         "tool_observation_tokens_in_loss": 0,
         "historical_assistant_tokens_in_loss": 0,
@@ -70,6 +83,21 @@ def encode_terminal(tokenizer: Any, sample: Mapping[str, Any]) -> dict[str, Any]
         target_type="terminal_final",
         conversation_prefix=sample["conversation_prefix"],
         assistant_target=sample["assistant_target"],
+        tool_schema=sample["tool_schema"],
+    )
+
+
+def encode_terminal_stop(tokenizer: Any, sample: Mapping[str, Any]) -> dict[str, Any]:
+    if sample.get("replay_valid") is not True or sample.get("final_state_match") is not True:
+        raise ValueError("terminal-stop replay gate failed")
+    prefix = sample.get("conversation_prefix")
+    if not isinstance(prefix, list) or not prefix or prefix[-1].get("role") != "tool":
+        raise ValueError("terminal-stop requires final gold tool observation")
+    return encode_assistant_target(
+        tokenizer,
+        task_id=sample["task_id"], state_identity=sample["state_identity"],
+        target_type="terminal_stop", conversation_prefix=prefix,
+        assistant_target={"role": "assistant", "content": ""},
         tool_schema=sample["tool_schema"],
     )
 
