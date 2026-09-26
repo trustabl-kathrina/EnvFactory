@@ -57,3 +57,20 @@ __pycache__/
 
 # Local patch backups
 *.orig
+
+# Graph-Frontier run state: preserve on disk, exclude from source commits.
+/repro_1p7b/graph_frontier/recursive_opd_v1_run/
+/repro_1p7b/graph_frontier/official_rl_audit/replay_tasks/
+/repro_1p7b/graph_frontier/official_rl_audit/replay_tasks_v1/
+/repro_1p7b/graph_frontier/official_rl_audit/*.parquet
+/repro_1p7b/graph_frontier/cycle3_pilot/evaluation/
+/repro_1p7b/graph_frontier/cycle3_pilot/data_execfd_stop_64_v1/
+/repro_1p7b/graph_frontier/cycle3_pilot/formal_train/
+/repro_1p7b/graph_frontier/cycle3_pilot/smoke_train/
+/repro_1p7b/graph_frontier/cycle3_pilot/*_status
+/repro_1p7b/graph_frontier/cycle3_stop_ratio_ablation/evaluation/
+/repro_1p7b/graph_frontier/cycle3_stop_ratio_ablation/train_2to1/
+/repro_1p7b/graph_frontier/cycle3_stop_ratio_ablation/train_4to1/
+/repro_1p7b/graph_frontier/cycle3_stop_ratio_ablation/*_status
+/repro_1p7b/graph_frontier/terminal_stop_smoke/
+/repro_1p7b/graph_frontier/terminal_stop_audit/token_probe.json

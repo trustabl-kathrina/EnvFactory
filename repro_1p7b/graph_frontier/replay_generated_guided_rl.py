@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import argparse
 import asyncio
+import copy
 import hashlib
 import json
 import os
@@ -51,6 +52,60 @@ def task_rows(source: Path) -> dict[str, dict[str, Any]]:
         for row in json.loads((source / name).read_text()):
             result[str(row["task_id"])] = row
     return result
+
+
+def set_argument(arguments: dict[str, Any], path: str, value: Any) -> None:
+    parts = path.split(".")
+    current: Any = arguments
+    for part in parts[:-1]:
+        if not isinstance(current, dict):
+            raise ValueError(f"cannot set nested argument {path}")
+        current = current.setdefault(part, {})
+    if not isinstance(current, dict) or not parts[-1]:
+        raise ValueError(f"cannot set nested argument {path}")
+    current[parts[-1]] = value
+
+
+def bind_runtime_dependency_arguments(
+    tool_name: str,
+    arguments: Mapping[str, Any],
+    sidecar: Mapping[str, Any],
+    producer_fields: Mapping[str, Any],
+) -> tuple[dict[str, Any], list[dict[str, Any]]]:
+    """Rebind unique runtime-produced values such as nondeterministic IDs."""
+    from repro_1p7b.graph_frontier.adapters import UNKNOWN
+    from repro_1p7b.graph_frontier.profiler import _path_values
+
+    bound = copy.deepcopy(dict(arguments))
+    rebindings = []
+    for edge in sidecar.get("dependency_edges", []) or []:
+        consumer = (edge.get("consumer_tool") or {}).get("tool_name")
+        if consumer != tool_name:
+            continue
+        producer = (edge.get("producer_tool") or {}).get("tool_name")
+        source_path = (edge.get("producer_output_parameter") or {}).get("parameter_name")
+        target_path = (edge.get("consumer_input_parameter") or {}).get("parameter_name")
+        if producer not in producer_fields or not isinstance(target_path, str):
+            continue
+        values = _path_values(producer_fields[producer], source_path)
+        if values == UNKNOWN:
+            continue
+        unique = {stable(value): value for value in values}
+        if len(unique) != 1:
+            continue
+        value = next(iter(unique.values()))
+        old_values = _path_values(bound, target_path)
+        old_value = old_values[0] if old_values != UNKNOWN and len(old_values) == 1 else UNKNOWN
+        if old_value != value:
+            set_argument(bound, target_path, value)
+            rebindings.append({
+                "producer_tool": producer,
+                "producer_output_parameter": source_path,
+                "consumer_input_parameter": target_path,
+                "old_value": old_value,
+                "runtime_value": value,
+            })
+    return bound, rebindings
 
 
 def raw_call(manager: Any, client_id: str, tool_name: str, arguments: Mapping[str, Any]) -> Any:
@@ -114,6 +169,7 @@ def replay_one(row: Mapping[str, Any], output: Path, manager: Any) -> dict[str, 
                 raise RuntimeError(f"initial_config_missing_server:{server}")
             manager.load_scenario(client_ids[server], initial[server], check=True)
         result["reset_ok"] = True
+        producer_fields: dict[str, Any] = {}
         for index, call in enumerate(ground_truth):
             name = call.get("name")
             arguments = call.get("arguments")
@@ -122,6 +178,9 @@ def replay_one(row: Mapping[str, Any], output: Path, manager: Any) -> dict[str, 
             server = name.split("-", 1)[0]
             if server not in client_ids:
                 raise RuntimeError(f"gold_call_server_not_loaded:{server}")
+            arguments, rebindings = bind_runtime_dependency_arguments(
+                name, arguments, sidecar, producer_fields
+            )
             before = saved_state(manager, list(client_ids.values()))
             raw = raw_call(manager, client_ids[server], name, arguments)
             fields, success = adapt_fastmcp_result(raw)
@@ -138,9 +197,11 @@ def replay_one(row: Mapping[str, Any], output: Path, manager: Any) -> dict[str, 
             )
             event["state_before"] = before
             event["state_after"] = after
+            event["runtime_dependency_rebindings"] = rebindings
             if success is not True:
                 raise RuntimeError(f"typed_tool_failure:{index}:{name}")
             result["typed_success_calls"] += 1
+            producer_fields[name] = fields
 
         final_state = saved_state(manager, list(client_ids.values()))
         verifier = compare_final_states(final_state, expected)

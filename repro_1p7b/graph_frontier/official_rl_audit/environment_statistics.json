@@ -1,0 +1,2387 @@
+{
+  "AirDNA": {
+    "candidate_dependency_rate": 0.3913,
+    "mean_args_per_task": 4.5652,
+    "mean_chain_length": 2.2609,
+    "opd_ready_rate": 0.9565,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 23,
+    "verified_dependency_rate": 0.0
+  },
+  "AirDNA,AttomRealEstate,RentCast": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 6.5,
+    "mean_chain_length": 4.5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "AirDNA,AttomRealEstate,ZillowRealEstate": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AirDNA,RentCast": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 7.75,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.75,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "AirDNA,ZillowRealEstate": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 8.6667,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline": {
+    "candidate_dependency_rate": 0.7273,
+    "mean_args_per_task": 7.1818,
+    "mean_chain_length": 2.9091,
+    "opd_ready_rate": 0.8182,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,AttomRealEstate,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,CampusCard,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,CampusCard,WhatsApp": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,FakeStoreServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,HotelBooking": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Notion,Retail": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Notion,Retail,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 18,
+    "mean_chain_length": 7,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Retail,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Retail,StripePaymentServer,Telecom": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Retail,Telecom": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,StripePaymentServer,Telecom,TravelBooking": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,Telecom,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Airline,TravelBooking": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 3.1667,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.1667,
+    "tasks": 6,
+    "verified_dependency_rate": 0.1667
+  },
+  "AirtableMcpServer": {
+    "candidate_dependency_rate": 0.7391,
+    "mean_args_per_task": 5.3696,
+    "mean_chain_length": 2.7826,
+    "opd_ready_rate": 0.5435,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 46,
+    "verified_dependency_rate": 0.0435
+  },
+  "AmazonProduct": {
+    "candidate_dependency_rate": 0.5833,
+    "mean_args_per_task": 3.4167,
+    "mean_chain_length": 1.9167,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 12,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,Calendar": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6.5,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,Dice": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,EbayServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6.3333,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,EbayServer,EtsyServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 12,
+    "mean_chain_length": 7,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,EbayServer,FakeStoreServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,EtsyServer,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,FakeStoreServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,GoogleTasks": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,LeagueOfLegends": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonProduct,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonSES": {
+    "candidate_dependency_rate": 0.1429,
+    "mean_args_per_task": 4.3571,
+    "mean_chain_length": 1.9286,
+    "opd_ready_rate": 0.9286,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 14,
+    "verified_dependency_rate": 0.0
+  },
+  "AmazonSES,WhatsApp": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 2.5,
+    "mean_chain_length": 2.3333,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,RentCast": {
+    "candidate_dependency_rate": 0.3077,
+    "mean_args_per_task": 3.9231,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.5385,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 13,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,RentCast,Retail": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 2.6667,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,RentCast,Weather": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 4.3333,
+    "mean_chain_length": 3.6667,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,RentCast,ZillowRealEstate": {
+    "candidate_dependency_rate": 0.8,
+    "mean_args_per_task": 7.6,
+    "mean_chain_length": 5.2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,Retail": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 4.6667,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,Weather": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "AttomRealEstate,ZillowRealEstate": {
+    "candidate_dependency_rate": 0.75,
+    "mean_args_per_task": 4.5,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "BestBuyServer": {
+    "candidate_dependency_rate": 0.7,
+    "mean_args_per_task": 4.1,
+    "mean_chain_length": 2.85,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 20,
+    "verified_dependency_rate": 0.0
+  },
+  "BestBuyServer,Dice": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "BestBuyServer,EbayServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 5.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "BestBuyServer,EtsyServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "BestBuyServer,PriceComparison": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "BestBuyServer,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Calendar": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 0.8,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 10,
+    "verified_dependency_rate": 0.0
+  },
+  "Calendar,ZoomMeetingServer": {
+    "candidate_dependency_rate": 0.8182,
+    "mean_args_per_task": 7.5455,
+    "mean_chain_length": 3.2727,
+    "opd_ready_rate": 0.6364,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0909
+  },
+  "CampusCard": {
+    "candidate_dependency_rate": 0.2667,
+    "mean_args_per_task": 3.6,
+    "mean_chain_length": 1.7333,
+    "opd_ready_rate": 0.9333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 15,
+    "verified_dependency_rate": 0.0
+  },
+  "CampusCard,GitHubServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "CampusCard,HotelBooking": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "CampusCard,Retail": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 9.6667,
+    "mean_chain_length": 4.3333,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "CampusCard,Retail,StripePaymentServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas": {
+    "candidate_dependency_rate": 0.8,
+    "mean_args_per_task": 2.6667,
+    "mean_chain_length": 2.7333,
+    "opd_ready_rate": 0.9333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 15,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,Dice,GoogleTasks": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,GoogleTasks": {
+    "candidate_dependency_rate": 0.8,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 5.2,
+    "opd_ready_rate": 0.6,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,GoogleTasks,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,LinkedInJobs,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,MetMuseum": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 8,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7.25,
+    "mean_chain_length": 5.75,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "Canvas,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4.5,
+    "mean_chain_length": 3.5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "CarPrice": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1.9091,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 22,
+    "verified_dependency_rate": 0.0
+  },
+  "ChinaRailway": {
+    "candidate_dependency_rate": 0.35,
+    "mean_args_per_task": 6.4,
+    "mean_chain_length": 2.95,
+    "opd_ready_rate": 0.95,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 20,
+    "verified_dependency_rate": 0.0
+  },
+  "ClinicalTrialsGov": {
+    "candidate_dependency_rate": 0.4524,
+    "mean_args_per_task": 7.6905,
+    "mean_chain_length": 3.8333,
+    "opd_ready_rate": 0.1667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 42,
+    "verified_dependency_rate": 0.119
+  },
+  "CryptoPrice": {
+    "candidate_dependency_rate": 0.1556,
+    "mean_args_per_task": 3.7556,
+    "mean_chain_length": 2.9778,
+    "opd_ready_rate": 0.8889,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 45,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice": {
+    "candidate_dependency_rate": 0.5714,
+    "mean_args_per_task": 4.1429,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.7857,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 14,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,GoogleTasks": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 9.1667,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.1667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,GoogleTasks,LinkedInJobs": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8.6667,
+    "mean_chain_length": 6.6667,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,GoogleTasks,LinkedInJobs,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,LinkedInJobs": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 5.6667,
+    "mean_chain_length": 4.8333,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,LinkedInJobs,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,Message": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Dice,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 7,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 3.0476,
+    "mean_chain_length": 2.0476,
+    "opd_ready_rate": 0.4286,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 21,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,Maps": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 3.6667,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,Maps,Weather": {
+    "candidate_dependency_rate": 0.0769,
+    "mean_args_per_task": 5.6154,
+    "mean_chain_length": 4.2308,
+    "opd_ready_rate": 0.3077,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 13,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,Maps,WhatsApp": {
+    "candidate_dependency_rate": 0.75,
+    "mean_args_per_task": 7.5,
+    "mean_chain_length": 5.25,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,ResendEmailService,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,Weather": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3.875,
+    "mean_chain_length": 3.25,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 8,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,Weather,WhatsApp": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 8.5,
+    "mean_chain_length": 4.5,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Didi,WhatsApp": {
+    "candidate_dependency_rate": 0.8333,
+    "mean_args_per_task": 6.1667,
+    "mean_chain_length": 3.6667,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "DrugBank": {
+    "candidate_dependency_rate": 0.6897,
+    "mean_args_per_task": 4.069,
+    "mean_chain_length": 3.2759,
+    "opd_ready_rate": 0.931,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 29,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer": {
+    "candidate_dependency_rate": 0.4286,
+    "mean_args_per_task": 4.4286,
+    "mean_chain_length": 1.9048,
+    "opd_ready_rate": 0.8095,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 21,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,EtsyServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8.7143,
+    "mean_chain_length": 4.1429,
+    "opd_ready_rate": 0.7143,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 7,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,EtsyServer,FakeStoreServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 14,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,EtsyServer,FakeStoreServer,LeagueOfLegends": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,EtsyServer,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,FakeStoreServer": {
+    "candidate_dependency_rate": 0.5556,
+    "mean_args_per_task": 7.8889,
+    "mean_chain_length": 4.1111,
+    "opd_ready_rate": 0.5556,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 9,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,FakeStoreServer,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,FakeStoreServer,TradingBot": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,PayPalPaymentProcessor": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 1.0,
+    "tasks": 1,
+    "verified_dependency_rate": 1.0
+  },
+  "EbayServer,Retail,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 14,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.6,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 3.4,
+    "opd_ready_rate": 0.4,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EbayServer,TradingBot": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer": {
+    "candidate_dependency_rate": 0.619,
+    "mean_args_per_task": 7.0476,
+    "mean_chain_length": 3.2857,
+    "opd_ready_rate": 0.619,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 21,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,FakeStoreServer": {
+    "candidate_dependency_rate": 0.375,
+    "mean_args_per_task": 7.75,
+    "mean_chain_length": 3.625,
+    "opd_ready_rate": 0.375,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 8,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,FakeStoreServer,LeagueOfLegends": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,GameTrending": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6.5,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.75,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,GameTrending,GitHubServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 15,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,GoogleTasks": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10.5,
+    "mean_chain_length": 5.5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,GoogleTasks,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 16,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,Retail": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,Retail,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "EtsyServer,StripePaymentServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "ExcelServer": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 7.5,
+    "mean_chain_length": 2.25,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer": {
+    "candidate_dependency_rate": 0.125,
+    "mean_args_per_task": 3.4643,
+    "mean_chain_length": 2.4643,
+    "opd_ready_rate": 0.8393,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 56,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer,LeagueOfLegends": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer,LinkedInJobs": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 7,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer,Retail": {
+    "candidate_dependency_rate": 0.3636,
+    "mean_args_per_task": 3.8182,
+    "mean_chain_length": 3.6364,
+    "opd_ready_rate": 0.8182,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer,Retail,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "FakeStoreServer,TickTick": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "FatSecretPlatform": {
+    "candidate_dependency_rate": 0.5714,
+    "mean_args_per_task": 4.0952,
+    "mean_chain_length": 3.2381,
+    "opd_ready_rate": 0.881,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 42,
+    "verified_dependency_rate": 0.0
+  },
+  "FatSecretPlatform,HowToCook": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 4.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "Filesystem": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Filesystem,GitHubServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 3.5,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Filesystem,GorillaFileSystem": {
+    "candidate_dependency_rate": 0.4545,
+    "mean_args_per_task": 5.1818,
+    "mean_chain_length": 3.6364,
+    "opd_ready_rate": 0.6364,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0
+  },
+  "FinancialDatasets": {
+    "candidate_dependency_rate": 0.5366,
+    "mean_args_per_task": 5.4634,
+    "mean_chain_length": 3.0976,
+    "opd_ready_rate": 0.9756,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 41,
+    "verified_dependency_rate": 0.0
+  },
+  "FinancialDatasets,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "FinancialDatasets,TradingBot": {
+    "candidate_dependency_rate": 0.381,
+    "mean_args_per_task": 4.619,
+    "mean_chain_length": 3.5238,
+    "opd_ready_rate": 0.9048,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 21,
+    "verified_dependency_rate": 0.0
+  },
+  "FruityviceServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1.5,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 8,
+    "verified_dependency_rate": 0.0
+  },
+  "GameTrending": {
+    "candidate_dependency_rate": 0.8889,
+    "mean_args_per_task": 2.6667,
+    "mean_chain_length": 2.6667,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 9,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 7.6875,
+    "mean_chain_length": 3.0729,
+    "opd_ready_rate": 0.7604,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 96,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,GitServer": {
+    "candidate_dependency_rate": 0.8182,
+    "mean_args_per_task": 8.8182,
+    "mean_chain_length": 3.6364,
+    "opd_ready_rate": 0.4545,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,GitServer,GithubTrending": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,GithubTrending": {
+    "candidate_dependency_rate": 0.625,
+    "mean_args_per_task": 8.125,
+    "mean_chain_length": 3.375,
+    "opd_ready_rate": 0.6875,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 16,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,Notion": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,Posting": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 3.3333,
+    "mean_chain_length": 3.1667,
+    "opd_ready_rate": 0.8333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,Retail": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "GitHubServer,TicketManagementSystem": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 2.3333,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "GitServer": {
+    "candidate_dependency_rate": 0.625,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 2.625,
+    "opd_ready_rate": 0.875,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 8,
+    "verified_dependency_rate": 0.0
+  },
+  "GithubTrending": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 5.3333,
+    "mean_chain_length": 2.3333,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleDrive": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 1.75,
+    "opd_ready_rate": 0.75,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleDrive,GoogleTasks": {
+    "candidate_dependency_rate": 0.625,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.875,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 8,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleDrive,OneDrive": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4.75,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleDrive,OneDrive,ZoomMeetingServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 1.0,
+    "tasks": 1,
+    "verified_dependency_rate": 1.0
+  },
+  "GoogleDrive,ZoomMeetingServer": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleSheets": {
+    "candidate_dependency_rate": 0.7059,
+    "mean_args_per_task": 5.549,
+    "mean_chain_length": 2.6863,
+    "opd_ready_rate": 0.4314,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 51,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks": {
+    "candidate_dependency_rate": 0.75,
+    "mean_args_per_task": 5.62,
+    "mean_chain_length": 3.24,
+    "opd_ready_rate": 0.7,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 100,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks,LinkedInJobs": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 5.25,
+    "mean_chain_length": 3.25,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks,LinkedInJobs,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8.2,
+    "mean_chain_length": 5.8,
+    "opd_ready_rate": 0.2,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks,MetMuseum": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4.3333,
+    "mean_chain_length": 3.6667,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks,StripePaymentServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 9,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "GoogleTasks,TickTick": {
+    "candidate_dependency_rate": 0.88,
+    "mean_args_per_task": 8.26,
+    "mean_chain_length": 4.24,
+    "opd_ready_rate": 0.34,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 50,
+    "verified_dependency_rate": 0.0
+  },
+  "GorillaFileSystem": {
+    "candidate_dependency_rate": 0.2632,
+    "mean_args_per_task": 3.9561,
+    "mean_chain_length": 3.2105,
+    "opd_ready_rate": 0.886,
+    "strict_parameter_rich_rate": 0.0175,
+    "tasks": 114,
+    "verified_dependency_rate": 0.0614
+  },
+  "HKBus": {
+    "candidate_dependency_rate": 0.5227,
+    "mean_args_per_task": 5.4545,
+    "mean_chain_length": 3.0455,
+    "opd_ready_rate": 0.8636,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 44,
+    "verified_dependency_rate": 0.0
+  },
+  "HackerNews": {
+    "candidate_dependency_rate": 0.2308,
+    "mean_args_per_task": 3.6923,
+    "mean_chain_length": 2.1538,
+    "opd_ready_rate": 0.9231,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 13,
+    "verified_dependency_rate": 0.0
+  },
+  "HackerNews,Posting": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "HotelBooking": {
+    "candidate_dependency_rate": 0.8333,
+    "mean_args_per_task": 6.3333,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 0.8333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "HotelBooking,Maps": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "HotelBooking,Maps,StripePaymentServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "HotelBooking,Maps,TravelBooking": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "HotelBooking,Maps,WhatsApp": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "HotelBooking,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "HowToCook": {
+    "candidate_dependency_rate": 0.4167,
+    "mean_args_per_task": 2.1667,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 12,
+    "verified_dependency_rate": 0.0
+  },
+  "HugeiconsServer": {
+    "candidate_dependency_rate": 0.0769,
+    "mean_args_per_task": 5.4615,
+    "mean_chain_length": 3.6923,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 13,
+    "verified_dependency_rate": 0.0
+  },
+  "KospiKosdaqStock": {
+    "candidate_dependency_rate": 0.7143,
+    "mean_args_per_task": 7.1429,
+    "mean_chain_length": 2.2857,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 7,
+    "verified_dependency_rate": 0.0
+  },
+  "KospiKosdaqStock,YahooFinance": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7.8571,
+    "mean_chain_length": 3.1429,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 7,
+    "verified_dependency_rate": 0.0
+  },
+  "Kuaidi100": {
+    "candidate_dependency_rate": 0.5588,
+    "mean_args_per_task": 7.5294,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 34,
+    "verified_dependency_rate": 0.0
+  },
+  "LeagueOfLegends": {
+    "candidate_dependency_rate": 0.2041,
+    "mean_args_per_task": 4.6531,
+    "mean_chain_length": 2.8163,
+    "opd_ready_rate": 0.9592,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 49,
+    "verified_dependency_rate": 0.0
+  },
+  "LeagueOfLegends,LinkedInJobs": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "LeagueOfLegends,Valorant": {
+    "candidate_dependency_rate": 0.6,
+    "mean_args_per_task": 6.8,
+    "mean_chain_length": 3.4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "LinkedInJobs": {
+    "candidate_dependency_rate": 0.9231,
+    "mean_args_per_task": 2.8462,
+    "mean_chain_length": 2.9231,
+    "opd_ready_rate": 0.9231,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 13,
+    "verified_dependency_rate": 0.0
+  },
+  "LinkedInJobs,Message": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7.5,
+    "mean_chain_length": 8,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "LinkedInJobs,Message,Retail,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 10,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "LinkedInJobs,MetMuseum": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 8,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "LinkedInJobs,TickTick": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 24,
+    "mean_chain_length": 9,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "MailgunCommunication": {
+    "candidate_dependency_rate": 0.6667,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "MailgunCommunication,PostmarkEmailService,ResendEmailService": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "MailgunCommunication,PostmarkEmailService,WhatsApp": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "MailgunCommunication,ResendEmailService": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 1,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Maps": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3.75,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.5
+  },
+  "Maps,Weather": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 5.4167,
+    "mean_chain_length": 3.75,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 12,
+    "verified_dependency_rate": 0.3333
+  },
+  "Maps,Weather,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 10,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 1.0
+  },
+  "Maps,WhatsApp": {
+    "candidate_dependency_rate": 0.25,
+    "mean_args_per_task": 5.25,
+    "mean_chain_length": 3.25,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.5
+  },
+  "MeditationServer": {
+    "candidate_dependency_rate": 0.2727,
+    "mean_args_per_task": 3.0909,
+    "mean_chain_length": 1.9091,
+    "opd_ready_rate": 0.8182,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0
+  },
+  "MeditationServer,Message": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4.6667,
+    "mean_chain_length": 4.3333,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "MeditationServer,Retail": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "MeditationServer,Retail,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 14,
+    "mean_chain_length": 8,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 1.0
+  },
+  "MeditationServer,SanvelloMentalHealthServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "MemoryKnowledgeGraph": {
+    "candidate_dependency_rate": 0.2027,
+    "mean_args_per_task": 2.0676,
+    "mean_chain_length": 2.0676,
+    "opd_ready_rate": 0.5541,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 74,
+    "verified_dependency_rate": 0.0
+  },
+  "Message": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 2.4167,
+    "mean_chain_length": 2.9167,
+    "opd_ready_rate": 0.7917,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 24,
+    "verified_dependency_rate": 0.0
+  },
+  "Message,Notion": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Message,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Message,SanvelloMentalHealthServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Message,StripePaymentServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Message,Telecom": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Message,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4.8333,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "MetMuseum": {
+    "candidate_dependency_rate": 0.8571,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 7,
+    "verified_dependency_rate": 0.0
+  },
+  "MongoDBServer": {
+    "candidate_dependency_rate": 0.2632,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 2.3509,
+    "opd_ready_rate": 0.4912,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 57,
+    "verified_dependency_rate": 0.0
+  },
+  "MovieRecommender": {
+    "candidate_dependency_rate": 0.25,
+    "mean_args_per_task": 2.3125,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 16,
+    "verified_dependency_rate": 0.0
+  },
+  "NationalParks": {
+    "candidate_dependency_rate": 0.5385,
+    "mean_args_per_task": 4.4808,
+    "mean_chain_length": 2.4808,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 52,
+    "verified_dependency_rate": 0.0
+  },
+  "Notion": {
+    "candidate_dependency_rate": 0.7778,
+    "mean_args_per_task": 7.6889,
+    "mean_chain_length": 3.4,
+    "opd_ready_rate": 0.2444,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 45,
+    "verified_dependency_rate": 0.0
+  },
+  "Notion,Posting": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 24,
+    "mean_chain_length": 11,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Notion,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5.5,
+    "mean_chain_length": 3.75,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 4,
+    "verified_dependency_rate": 0.0
+  },
+  "Notion,Retail,ShopifyEcommerce": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8.3333,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.3333,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "Notion,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 1,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Notion,TicketManagementSystem": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "OneDrive": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "OneDrive,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "OneDrive,ZoomMeetingServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "OpenLibrary": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4.25,
+    "mean_chain_length": 1.8333,
+    "opd_ready_rate": 0.75,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 12,
+    "verified_dependency_rate": 0.0
+  },
+  "PayPalPaymentProcessor": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4.5714,
+    "mean_chain_length": 1.4286,
+    "opd_ready_rate": 0.8571,
+    "strict_parameter_rich_rate": 0.2857,
+    "tasks": 7,
+    "verified_dependency_rate": 0.2857
+  },
+  "PayPalPaymentProcessor,StripePaymentServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 1,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Posting": {
+    "candidate_dependency_rate": 0.4091,
+    "mean_args_per_task": 3.3864,
+    "mean_chain_length": 2.6136,
+    "opd_ready_rate": 0.7955,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 44,
+    "verified_dependency_rate": 0.0
+  },
+  "PostmarkEmailService": {
+    "candidate_dependency_rate": 0.4,
+    "mean_args_per_task": 8.2,
+    "mean_chain_length": 2.4,
+    "opd_ready_rate": 0.8,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "PostmarkEmailService,ResendEmailService": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 13.5,
+    "mean_chain_length": 4.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "PostmarkEmailService,WhatsApp": {
+    "candidate_dependency_rate": 0.8,
+    "mean_args_per_task": 3.6,
+    "mean_chain_length": 2.6,
+    "opd_ready_rate": 0.4,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 5,
+    "verified_dependency_rate": 0.0
+  },
+  "PriceComparison": {
+    "candidate_dependency_rate": 0.9,
+    "mean_args_per_task": 7.3,
+    "mean_chain_length": 2.7,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 10,
+    "verified_dependency_rate": 0.0
+  },
+  "PubMedServer": {
+    "candidate_dependency_rate": 0.4615,
+    "mean_args_per_task": 5.3077,
+    "mean_chain_length": 2.5769,
+    "opd_ready_rate": 0.1923,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 26,
+    "verified_dependency_rate": 0.0
+  },
+  "RentCast": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3.8333,
+    "mean_chain_length": 2.25,
+    "opd_ready_rate": 0.9167,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 12,
+    "verified_dependency_rate": 0.0
+  },
+  "RentCast,Retail": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "RentCast,Weather": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "RentCast,Weather,ZillowRealEstate": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 7,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "RentCast,ZillowRealEstate": {
+    "candidate_dependency_rate": 0.7143,
+    "mean_args_per_task": 6.4286,
+    "mean_chain_length": 3.7143,
+    "opd_ready_rate": 0.8571,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 7,
+    "verified_dependency_rate": 0.0
+  },
+  "ResendEmailService": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 3.6667,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 0.6667,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 6,
+    "verified_dependency_rate": 0.0
+  },
+  "ResendEmailService,WhatsApp": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail": {
+    "candidate_dependency_rate": 0.6486,
+    "mean_args_per_task": 4.8559,
+    "mean_chain_length": 2.6847,
+    "opd_ready_rate": 0.7297,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 111,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,SanvelloMentalHealthServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 2,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,SanvelloMentalHealthServer,Telecom": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.7778,
+    "mean_args_per_task": 7.3333,
+    "mean_chain_length": 3.6667,
+    "opd_ready_rate": 0.5556,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 9,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,ShopifyEcommerce,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,ShopifyEcommerce,Weather": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,StripePaymentServer": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 12,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 6,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 8,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "Retail,ZillowRealEstate": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 12,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "SanvelloMentalHealthServer": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.5,
+    "tasks": 2,
+    "verified_dependency_rate": 0.5
+  },
+  "SanvelloMentalHealthServer,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 5,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "SanvelloMentalHealthServer,WhatsApp": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "ShopifyEcommerce": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 4.3333,
+    "mean_chain_length": 2.0256,
+    "opd_ready_rate": 0.7179,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 39,
+    "verified_dependency_rate": 0.0
+  },
+  "ShopifyEcommerce,StripePaymentServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3,
+    "mean_chain_length": 1.5,
+    "opd_ready_rate": 0.5,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "ShopifyEcommerce,StripePaymentServer,TradingBot": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 9.5,
+    "mean_chain_length": 5.5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "ShopifyEcommerce,Telecom": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 4,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "ShopifyEcommerce,TradingBot": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 4,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "SimpleArxiv": {
+    "candidate_dependency_rate": 0.375,
+    "mean_args_per_task": 3.625,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 8,
+    "verified_dependency_rate": 0.0
+  },
+  "SlackServer": {
+    "candidate_dependency_rate": 0.5714,
+    "mean_args_per_task": 7.0571,
+    "mean_chain_length": 3.1143,
+    "opd_ready_rate": 0.4857,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 35,
+    "verified_dependency_rate": 0.0
+  },
+  "StripePaymentServer": {
+    "candidate_dependency_rate": 0.5625,
+    "mean_args_per_task": 4.25,
+    "mean_chain_length": 2.0625,
+    "opd_ready_rate": 0.5625,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 16,
+    "verified_dependency_rate": 0.0
+  },
+  "StripePaymentServer,Telecom": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 11,
+    "mean_chain_length": 6,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "StripePaymentServer,TravelBooking": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 23,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 1.0,
+    "tasks": 1,
+    "verified_dependency_rate": 1.0
+  },
+  "TFTServer": {
+    "candidate_dependency_rate": 0.0333,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 2.3667,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 30,
+    "verified_dependency_rate": 0.0
+  },
+  "Telecom": {
+    "candidate_dependency_rate": 0.7647,
+    "mean_args_per_task": 5.0882,
+    "mean_chain_length": 2.8235,
+    "opd_ready_rate": 0.6471,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 34,
+    "verified_dependency_rate": 0.0
+  },
+  "TickTick": {
+    "candidate_dependency_rate": 0.8077,
+    "mean_args_per_task": 6.9615,
+    "mean_chain_length": 3.3462,
+    "opd_ready_rate": 0.5385,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 52,
+    "verified_dependency_rate": 0.0
+  },
+  "TicketManagementSystem": {
+    "candidate_dependency_rate": 0.1714,
+    "mean_args_per_task": 3.5714,
+    "mean_chain_length": 2.2571,
+    "opd_ready_rate": 0.4571,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 35,
+    "verified_dependency_rate": 0.0
+  },
+  "TicketManagementSystem,TradingBot": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 2,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 1,
+    "verified_dependency_rate": 0.0
+  },
+  "TradingBot": {
+    "candidate_dependency_rate": 0.3333,
+    "mean_args_per_task": 2.9375,
+    "mean_chain_length": 2.4583,
+    "opd_ready_rate": 0.8958,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 48,
+    "verified_dependency_rate": 0.0
+  },
+  "TravelBooking": {
+    "candidate_dependency_rate": 0.5,
+    "mean_args_per_task": 6.4,
+    "mean_chain_length": 2.4,
+    "opd_ready_rate": 0.8,
+    "strict_parameter_rich_rate": 0.1,
+    "tasks": 10,
+    "verified_dependency_rate": 0.1
+  },
+  "UUPaoTui": {
+    "candidate_dependency_rate": 0.4848,
+    "mean_args_per_task": 4.9242,
+    "mean_chain_length": 2.3939,
+    "opd_ready_rate": 0.3636,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 66,
+    "verified_dependency_rate": 0.0
+  },
+  "Valorant": {
+    "candidate_dependency_rate": 0.08,
+    "mean_args_per_task": 1.52,
+    "mean_chain_length": 2.04,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 25,
+    "verified_dependency_rate": 0.0
+  },
+  "VehicleControl": {
+    "candidate_dependency_rate": 0.1331,
+    "mean_args_per_task": 1.943,
+    "mean_chain_length": 2.6312,
+    "opd_ready_rate": 0.749,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 263,
+    "verified_dependency_rate": 0.0
+  },
+  "Weather": {
+    "candidate_dependency_rate": 0.16,
+    "mean_args_per_task": 3.76,
+    "mean_chain_length": 2.16,
+    "opd_ready_rate": 0.92,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 25,
+    "verified_dependency_rate": 0.0
+  },
+  "Weather,WhatsApp": {
+    "candidate_dependency_rate": 1.0,
+    "mean_args_per_task": 7.6667,
+    "mean_chain_length": 5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 3,
+    "verified_dependency_rate": 0.0
+  },
+  "WhatsApp": {
+    "candidate_dependency_rate": 0.6711,
+    "mean_args_per_task": 4.0395,
+    "mean_chain_length": 2.4868,
+    "opd_ready_rate": 0.4342,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 76,
+    "verified_dependency_rate": 0.0
+  },
+  "Whois": {
+    "candidate_dependency_rate": 0.0244,
+    "mean_args_per_task": 2.3415,
+    "mean_chain_length": 2.3415,
+    "opd_ready_rate": 0.8049,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 41,
+    "verified_dependency_rate": 0.0
+  },
+  "WikipediaServer": {
+    "candidate_dependency_rate": 0.0,
+    "mean_args_per_task": 3.5,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 0.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 2,
+    "verified_dependency_rate": 0.0
+  },
+  "WuWa": {
+    "candidate_dependency_rate": 0.1429,
+    "mean_args_per_task": 2.5,
+    "mean_chain_length": 2.5,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 14,
+    "verified_dependency_rate": 0.0
+  },
+  "YahooFinance": {
+    "candidate_dependency_rate": 0.6863,
+    "mean_args_per_task": 5.3529,
+    "mean_chain_length": 3,
+    "opd_ready_rate": 0.8824,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 51,
+    "verified_dependency_rate": 0.0
+  },
+  "ZillowRealEstate": {
+    "candidate_dependency_rate": 0.4286,
+    "mean_args_per_task": 3.5714,
+    "mean_chain_length": 1.7143,
+    "opd_ready_rate": 1.0,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 7,
+    "verified_dependency_rate": 0.0
+  },
+  "ZoomMeetingServer": {
+    "candidate_dependency_rate": 0.0909,
+    "mean_args_per_task": 4.9091,
+    "mean_chain_length": 1.9091,
+    "opd_ready_rate": 0.6364,
+    "strict_parameter_rich_rate": 0.0,
+    "tasks": 11,
+    "verified_dependency_rate": 0.0
+  }
+}
