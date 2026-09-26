@@ -1,0 +1,13 @@
+{
+  "graph_frontier_dynamic_v2_stage2": {
+    "file_name": "../../data/graph_frontier_dynamic_v2/stage2_completion_efficiency.json",
+    "formatting": "alpaca",
+    "columns": {
+      "prompt": "instruction",
+      "query": "input",
+      "response": "output",
+      "history": "history",
+      "system": "system"
+    }
+  }
+}

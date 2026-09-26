@@ -1,0 +1,12 @@
+{
+  "chosen_executable_rate": 1.0,
+  "frozen_300_overlap": 0,
+  "replay_drop_reason_distribution": {
+    "ValueError:matched producer value is not unique: 0": 3
+  },
+  "replay_valid_states": 17,
+  "schema_version": "envfactory_active_frontier_replay_audit_v2",
+  "static_eligible_edges": 20,
+  "unique_state_ids": 17,
+  "unique_state_signatures": 15
+}

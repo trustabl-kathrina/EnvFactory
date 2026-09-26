@@ -1,0 +1,12 @@
+{
+  "max_tokens": 512,
+  "model": "dynamic-v1",
+  "request_failures": 0,
+  "samples_per_state": 4,
+  "schema_version": "envfactory_active_frontier_sampling_summary_v2",
+  "shard_count": 1,
+  "shard_index": 0,
+  "states": 17,
+  "temperature": 0.7,
+  "top_p": 0.95
+}

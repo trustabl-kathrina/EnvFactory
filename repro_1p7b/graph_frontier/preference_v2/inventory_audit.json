@@ -1,0 +1,45 @@
+{
+  "all_dependency_edges": 37,
+  "depth_distribution": {
+    "1": 18,
+    "2": 2
+  },
+  "environment_distribution": {
+    "AirDNA": 1,
+    "AmazonProduct": 1,
+    "Didi": 1,
+    "DrugBank": 1,
+    "FakeStoreServer": 1,
+    "GitHubServer": 2,
+    "GoogleSheets": 1,
+    "HotelBooking": 2,
+    "KospiKosdaqStock": 3,
+    "Kuaidi100": 2,
+    "Maps": 1,
+    "PayPalPaymentProcessor": 1,
+    "PriceComparison": 2,
+    "ResendEmailService": 1,
+    "Weather": 1,
+    "WhatsApp": 1
+  },
+  "frozen_300_manifest_sha256": "4ea5304d6f76294d70166260986767795fa0bf3fcf54b6196ee0c3f71e70f51c",
+  "frozen_300_overlap": 0,
+  "frozen_train_sha256": "1faabac69216efd36b4bb02822cec641fd623a6fefa5d581aa123fb441e66eeb",
+  "internal_required_edges": 33,
+  "schema_version": "graph_frontier_inventory_audit_v2",
+  "source": "frozen EnvFactory generated-RL TRAIN split only",
+  "state_gate": 128,
+  "state_gate_statically_reachable": false,
+  "static_drop_reason_distribution": {
+    "consumer_arguments_not_structured": 1,
+    "consumer_not_immediate_after_producer": 7,
+    "consumer_occurrence_not_unique": 1,
+    "not_internal_parameter": 4,
+    "producer_not_before_consumer": 1,
+    "producer_occurrence_not_unique": 4
+  },
+  "static_eligible_edges": 20,
+  "tasks_without_dependency_edges": 280,
+  "theoretical_max_unique_edge_states": 20,
+  "train_tasks": 314
+}

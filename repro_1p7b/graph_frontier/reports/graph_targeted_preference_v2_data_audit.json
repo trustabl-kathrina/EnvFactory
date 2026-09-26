@@ -1,0 +1,79 @@
+{
+  "depth_distribution": {
+    "1": 18
+  },
+  "environment_distribution": {
+    "DrugBank": 2,
+    "GoogleSheets": 2,
+    "Kuaidi100": 4,
+    "PayPalPaymentProcessor": 2,
+    "PriceComparison": 4,
+    "ResendEmailService": 2,
+    "WhatsApp": 2
+  },
+  "failure_type_distribution": {
+    "premature_stop": 18
+  },
+  "frozen_300_manifest_sha256": "4ea5304d6f76294d70166260986767795fa0bf3fcf54b6196ee0c3f71e70f51c",
+  "frozen_300_overlap": 0,
+  "frozen_train_sha256": "1faabac69216efd36b4bb02822cec641fd623a6fefa5d581aa123fb441e66eeb",
+  "gates": {
+    "chosen_executable_rate": {
+      "observed": 1.0,
+      "pass": true,
+      "required": 1.0
+    },
+    "failure_diversity": {
+      "observed": 1,
+      "pass": false,
+      "required": 2
+    },
+    "frozen_300_overlap": {
+      "observed": 0,
+      "pass": true,
+      "required": 0
+    },
+    "preference_pairs": {
+      "observed": 18,
+      "pass": false,
+      "required": 256
+    },
+    "task_group_split_disjoint": {
+      "observed": 0,
+      "pass": true,
+      "required": 0
+    },
+    "unique_frontier_states": {
+      "observed": 9,
+      "pass": false,
+      "required": 128
+    }
+  },
+  "ready_for_dpo_smoke": false,
+  "retention_funnel": {
+    "all_dependency_edges": 37,
+    "frozen_train_tasks": 314,
+    "internal_required_edges": 33,
+    "paired_states": 9,
+    "replay_valid_states": 17,
+    "sampled_actions": 68,
+    "static_eligible_edges": 20,
+    "valid_pairs": 18
+  },
+  "sample_classification_distribution": {
+    "ambiguous_same_tool": 10,
+    "correct": 25,
+    "premature_stop": 33
+  },
+  "schema_version": "graph_targeted_preference_v2_data_audit",
+  "splits": {
+    "method": "task_id grouped deterministic 90/10",
+    "seed": 20260920,
+    "train_pairs": 16,
+    "train_tasks": 8,
+    "val_pairs": 2,
+    "val_tasks": 1
+  },
+  "training_started": false,
+  "verdict": "PARTIAL-DATA-READY"
+}

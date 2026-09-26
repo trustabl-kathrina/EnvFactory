@@ -1,0 +1,100 @@
+{
+  "schema_version": "graph_frontier_guided_rl_v1_pilot128_comparison",
+  "status": "PILOT_COMPLETE_NO_GO_FULL_RL",
+  "protocol": {
+    "tasks": 128,
+    "rollouts_per_task": 4,
+    "reward_events_per_arm": 512,
+    "steps_per_arm": 64,
+    "frozen_300_exact_train_overlap": 0,
+    "pilot_manifest_sha256": "1f97f8fea69dbe007d73f531291137892ca0df34e9ba7669b2934ab98768cfa2",
+    "train_parquet_sha256": "5cef60450c57478df241da3438053fcc34ebcacfc2edc2c7ab761ccf4b27ee2f",
+    "validation_parquet_sha256": "824bd9230b8a9e226bcd8826944a96b1cf8e749babd587b3989372508f70a547",
+    "contamination_report_sha256": "71fb88f724bcf2078d64c3374ca0de3aad59021271066d7c04fb7517c1082239"
+  },
+  "completion": {
+    "standard": {
+      "status": "DONE",
+      "steps": 64,
+      "wall_time": "2:04:42"
+    },
+    "graph": {
+      "status": "DONE",
+      "steps": 64,
+      "wall_time": "1:58:40"
+    }
+  },
+  "event_metrics": {
+    "standard": {
+      "official_score_mean": 0.56083984375,
+      "final_reward_mean": 0.56083984375,
+      "success_rate": 0.326171875,
+      "state_score_mean": 0.8046875,
+      "trace_score_mean": 0.337890625
+    },
+    "graph": {
+      "official_score_mean": 0.541015625,
+      "final_reward_mean": 0.57470703125,
+      "success_rate": 0.279296875,
+      "state_score_mean": 0.806640625,
+      "trace_score_mean": 0.291015625,
+      "graph_delta_mean": 0.03369140625
+    },
+    "graph_minus_standard": {
+      "official_score_mean": -0.01982421875,
+      "final_reward_mean": 0.0138671875,
+      "success_rate": -0.046875,
+      "state_score_mean": 0.001953125,
+      "trace_score_mean": -0.046875
+    }
+  },
+  "graph_signal": {
+    "tasks_with_internal_edges": 28,
+    "events_with_internal_edges": 112,
+    "positive_delta_events": 25,
+    "negative_delta_events": 1,
+    "zero_delta_events": 486,
+    "eligible_internal_edges_sum": 124,
+    "consumer_opportunities_sum": 56,
+    "completed_consumer_opportunities_sum": 26,
+    "propagation_checks_sum": 26,
+    "correct_propagations_sum": 26,
+    "invalid_retry_count_sum": 1,
+    "delta_min": -0.05,
+    "delta_max": 0.7
+  },
+  "paired_subsets": {
+    "all": {
+      "tasks": 128,
+      "official_standard": 0.56083984375,
+      "official_graph": 0.541015625,
+      "official_diff": -0.01982421875,
+      "success_standard": 0.326171875,
+      "success_graph": 0.279296875,
+      "success_diff": -0.046875
+    },
+    "internal_edge": {
+      "tasks": 28,
+      "official_standard": 0.434375,
+      "official_graph": 0.421875,
+      "official_diff": -0.0125,
+      "success_standard": 0.1875,
+      "success_graph": 0.16071428571428573,
+      "success_diff": -0.026785714285714284
+    },
+    "no_edge": {
+      "tasks": 100,
+      "official_standard": 0.59625,
+      "official_graph": 0.574375,
+      "official_diff": -0.021875,
+      "success_standard": 0.365,
+      "success_graph": 0.3125,
+      "success_diff": -0.0525
+    }
+  },
+  "limitations": [
+    "single matched pilot",
+    "online training rollouts rather than held-out post-training evaluation",
+    "no final checkpoints because save_freq=-1"
+  ]
+}

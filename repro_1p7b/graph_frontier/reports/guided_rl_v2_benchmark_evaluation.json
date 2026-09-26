@@ -1,0 +1,3138 @@
+{
+  "bfcl": {
+    "paired_standard_vs_graph": {
+      "base": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": -3.0,
+        "discordant": 32,
+        "effect_size_pp_right_minus_left": -3.0,
+        "exact_two_sided_p": 0.37708558747544885,
+        "left_successes": 32,
+        "paired_bootstrap_95_ci_pp": [
+          -8.5,
+          2.5
+        ],
+        "paired_support": 200,
+        "right_losses": 19,
+        "right_successes": 26,
+        "right_wins": 13,
+        "shared_n": 200,
+        "ties_both_failure": 155,
+        "ties_both_success": 13
+      },
+      "long_context": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": 2.0,
+        "discordant": 18,
+        "effect_size_pp_right_minus_left": 2.0,
+        "exact_two_sided_p": 0.480682373046875,
+        "left_successes": 13,
+        "paired_bootstrap_95_ci_pp": [
+          -2.0,
+          6.0
+        ],
+        "paired_support": 200,
+        "right_losses": 7,
+        "right_successes": 17,
+        "right_wins": 11,
+        "shared_n": 200,
+        "ties_both_failure": 176,
+        "ties_both_success": 6
+      },
+      "missing_function": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": -2.5,
+        "discordant": 31,
+        "effect_size_pp_right_minus_left": -2.5,
+        "exact_two_sided_p": 0.47312965989112854,
+        "left_successes": 24,
+        "paired_bootstrap_95_ci_pp": [
+          -8.0,
+          3.0
+        ],
+        "paired_support": 200,
+        "right_losses": 18,
+        "right_successes": 19,
+        "right_wins": 13,
+        "shared_n": 200,
+        "ties_both_failure": 163,
+        "ties_both_success": 6
+      },
+      "missing_parameter": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": -0.5,
+        "discordant": 31,
+        "effect_size_pp_right_minus_left": -0.5,
+        "exact_two_sided_p": 1.0,
+        "left_successes": 23,
+        "paired_bootstrap_95_ci_pp": [
+          -6.0,
+          5.0
+        ],
+        "paired_support": 200,
+        "right_losses": 16,
+        "right_successes": 22,
+        "right_wins": 15,
+        "shared_n": 200,
+        "ties_both_failure": 162,
+        "ties_both_success": 7
+      },
+      "overall": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": -1.0,
+        "discordant": 112,
+        "effect_size_pp_right_minus_left": -1.0,
+        "exact_two_sided_p": 0.5085131799736614,
+        "left_successes": 92,
+        "paired_bootstrap_95_ci_pp": [
+          -3.625,
+          1.625
+        ],
+        "paired_support": 800,
+        "right_losses": 60,
+        "right_successes": 84,
+        "right_wins": 52,
+        "shared_n": 800,
+        "ties_both_failure": 656,
+        "ties_both_success": 32
+      }
+    },
+    "score_audit": {
+      "graph_v2": {
+        "base": {
+          "accuracy": 0.13,
+          "correct_count": 26,
+          "total_count": 200
+        },
+        "long_context": {
+          "accuracy": 0.085,
+          "correct_count": 17,
+          "total_count": 200
+        },
+        "missing_function": {
+          "accuracy": 0.095,
+          "correct_count": 19,
+          "total_count": 200
+        },
+        "missing_parameter": {
+          "accuracy": 0.11,
+          "correct_count": 22,
+          "total_count": 200
+        }
+      },
+      "standard_v2": {
+        "base": {
+          "accuracy": 0.16,
+          "correct_count": 32,
+          "total_count": 200
+        },
+        "long_context": {
+          "accuracy": 0.065,
+          "correct_count": 13,
+          "total_count": 200
+        },
+        "missing_function": {
+          "accuracy": 0.12,
+          "correct_count": 24,
+          "total_count": 200
+        },
+        "missing_parameter": {
+          "accuracy": 0.115,
+          "correct_count": 23,
+          "total_count": 200
+        }
+      }
+    },
+    "scores": {
+      "base": {
+        "base": 12.5,
+        "long_context": 6.5,
+        "missing_function": 7.5,
+        "missing_parameter": 8.5,
+        "overall": 8.75,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/evaluation/bfcl/artifacts/full/base/score/data_multi_turn.csv"
+      },
+      "dynamic_v1": {
+        "base": 14.0,
+        "long_context": 6.0,
+        "missing_function": 11.0,
+        "missing_parameter": 10.5,
+        "overall": 10.38,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/evaluation/bfcl/artifacts/full/dynamic_v1/score/data_multi_turn.csv"
+      },
+      "dynamic_v2": {
+        "base": 13.0,
+        "long_context": 8.0,
+        "missing_function": 10.5,
+        "missing_parameter": 13.0,
+        "overall": 11.12,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/evaluation/bfcl/artifacts/full/dynamic_v2/score/data_multi_turn.csv"
+      },
+      "graph_v2": {
+        "base": 13.0,
+        "long_context": 8.5,
+        "missing_function": 9.5,
+        "missing_parameter": 11.0,
+        "overall": 10.5,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/graph_frontier_rl_v2_step64/bfcl/score/data_multi_turn.csv"
+      },
+      "original_sft": {
+        "base": 13.5,
+        "long_context": 6.5,
+        "missing_function": 11.0,
+        "missing_parameter": 8.0,
+        "overall": 9.75,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/evaluation/bfcl/artifacts/full/sft/score/data_multi_turn.csv"
+      },
+      "parameter_aware": {
+        "base": 12.0,
+        "long_context": 7.5,
+        "missing_function": 9.5,
+        "missing_parameter": 15.0,
+        "overall": 11.0,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/evaluation/bfcl/artifacts/full/parameter_aware/score/data_multi_turn.csv"
+      },
+      "standard_v2": {
+        "base": 16.0,
+        "long_context": 6.5,
+        "missing_function": 12.0,
+        "missing_parameter": 11.5,
+        "overall": 11.5,
+        "path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/standard_rl_v2_control_step64/bfcl/score/data_multi_turn.csv"
+      }
+    }
+  },
+  "checkpoint_integrity": {
+    "graph_v2": {
+      "config_sha256": "c65f0b191dcea902b55c137cde42390871e02360d9432157f73ab221d5911d57",
+      "global_step": 64,
+      "latest_checkpointed_iteration": 64,
+      "merged": "repro_1p7b/checkpoints_eval/graph_frontier_rl_v2_pilot128_step64_hf",
+      "merged_files": [
+        {
+          "name": "model.safetensors",
+          "size": 4063515640
+        }
+      ],
+      "merged_loadable": true,
+      "model_shards": [
+        {
+          "name": "model_world_size_2_rank_0.pt",
+          "size": 4063660651
+        },
+        {
+          "name": "model_world_size_2_rank_1.pt",
+          "size": 4063660651
+        }
+      ],
+      "optimizer_shards": [
+        {
+          "name": "optim_world_size_2_rank_0.pt",
+          "size": 6882327044
+        },
+        {
+          "name": "optim_world_size_2_rank_1.pt",
+          "size": 6882327044
+        }
+      ],
+      "source": "repro_1p7b/checkpoints/graph_frontier_rl_v2_pilot128/global_step_64",
+      "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    },
+    "pilot_train_parquet_sha256": "5cef60450c57478df241da3438053fcc34ebcacfc2edc2c7ab761ccf4b27ee2f",
+    "same_config": true,
+    "same_tokenizer": true,
+    "shared_dynamic_v1_init_config_sha256": "2eb1c7d9ec4d1dde3651c2257b17d042489c589b16290501e0fbb5243851e03d",
+    "shared_dynamic_v1_init_model_sha256": "0231573c95e939a3dcc52518c15a7241edb32bcca65729f49230f593cec7b970",
+    "standard_v2": {
+      "config_sha256": "c65f0b191dcea902b55c137cde42390871e02360d9432157f73ab221d5911d57",
+      "global_step": 64,
+      "latest_checkpointed_iteration": 64,
+      "merged": "repro_1p7b/checkpoints_eval/standard_rl_v2_control_pilot128_step64_hf",
+      "merged_files": [
+        {
+          "name": "model.safetensors",
+          "size": 4063515640
+        }
+      ],
+      "merged_loadable": true,
+      "model_shards": [
+        {
+          "name": "model_world_size_2_rank_0.pt",
+          "size": 4063660651
+        },
+        {
+          "name": "model_world_size_2_rank_1.pt",
+          "size": 4063660651
+        }
+      ],
+      "optimizer_shards": [
+        {
+          "name": "optim_world_size_2_rank_0.pt",
+          "size": 6882327044
+        },
+        {
+          "name": "optim_world_size_2_rank_1.pt",
+          "size": 6882327044
+        }
+      ],
+      "source": "repro_1p7b/checkpoints/standard_rl_v2_control_pilot128/global_step_64",
+      "tokenizer_sha256": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4"
+    }
+  },
+  "comparisons": {
+    "graph_v2_vs_dynamic_v1": {
+      "bfcl_delta_pp": 0.11999999999999922,
+      "frozen": {
+        "dynamic_v1": {
+          "conditional_propagation": {
+            "attempts": 428,
+            "raw_rate": 0.5537383177570093,
+            "successes": 237
+          },
+          "consumer_not_executed": 102,
+          "consumer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.6028169014084507,
+            "successes": 428
+          },
+          "consumer_task_completion": {
+            "attempts": 300,
+            "raw_rate": 0.5533333333333333,
+            "successes": 166
+          },
+          "internal_complete": {
+            "attempts": 300,
+            "raw_rate": 0.32666666666666666,
+            "successes": 98
+          },
+          "internal_e2e": {
+            "attempts": 710,
+            "raw_rate": 0.33380281690140845,
+            "successes": 237
+          },
+          "producer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.9478873239436619,
+            "successes": 673
+          },
+          "redundant_calls_per_task": 0.06333333333333334,
+          "reference_path": {
+            "attempts": 300,
+            "raw_rate": 0.07666666666666666,
+            "successes": 23
+          },
+          "retry_after_error": 94,
+          "root_failure_attribution": {
+            "consumer_not_executed": 102,
+            "missing_internal_value": 12,
+            "observation_failure": 62,
+            "producer_not_executed": 1,
+            "wrong_propagated_value": 66
+          },
+          "semantic": {
+            "attempts": 300,
+            "raw_rate": 0.19,
+            "successes": 57
+          },
+          "tasks": 300,
+          "unexpected_calls_per_task": 0.7133333333333334
+        },
+        "graph_v2": {
+          "conditional_propagation": {
+            "attempts": 372,
+            "raw_rate": 0.5,
+            "successes": 186
+          },
+          "consumer_not_executed": 145,
+          "consumer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.523943661971831,
+            "successes": 372
+          },
+          "consumer_task_completion": {
+            "attempts": 300,
+            "raw_rate": 0.42,
+            "successes": 126
+          },
+          "internal_complete": {
+            "attempts": 300,
+            "raw_rate": 0.23,
+            "successes": 69
+          },
+          "internal_e2e": {
+            "attempts": 710,
+            "raw_rate": 0.2619718309859155,
+            "successes": 186
+          },
+          "producer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.9492957746478873,
+            "successes": 674
+          },
+          "redundant_calls_per_task": 0.06666666666666667,
+          "reference_path": {
+            "attempts": 300,
+            "raw_rate": 0.016666666666666666,
+            "successes": 5
+          },
+          "retry_after_error": 81,
+          "root_failure_attribution": {
+            "consumer_not_executed": 145,
+            "missing_internal_value": 6,
+            "observation_failure": 52,
+            "wrong_propagated_value": 67
+          },
+          "semantic": {
+            "attempts": 300,
+            "raw_rate": 0.1,
+            "successes": 30
+          },
+          "tasks": 300,
+          "unexpected_calls_per_task": 0.63
+        }
+      }
+    },
+    "standard_v2_vs_dynamic_v1": {
+      "bfcl_delta_pp": 1.1199999999999992,
+      "frozen": {
+        "dynamic_v1": {
+          "conditional_propagation": {
+            "attempts": 428,
+            "raw_rate": 0.5537383177570093,
+            "successes": 237
+          },
+          "consumer_not_executed": 102,
+          "consumer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.6028169014084507,
+            "successes": 428
+          },
+          "consumer_task_completion": {
+            "attempts": 300,
+            "raw_rate": 0.5533333333333333,
+            "successes": 166
+          },
+          "internal_complete": {
+            "attempts": 300,
+            "raw_rate": 0.32666666666666666,
+            "successes": 98
+          },
+          "internal_e2e": {
+            "attempts": 710,
+            "raw_rate": 0.33380281690140845,
+            "successes": 237
+          },
+          "producer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.9478873239436619,
+            "successes": 673
+          },
+          "redundant_calls_per_task": 0.06333333333333334,
+          "reference_path": {
+            "attempts": 300,
+            "raw_rate": 0.07666666666666666,
+            "successes": 23
+          },
+          "retry_after_error": 94,
+          "root_failure_attribution": {
+            "consumer_not_executed": 102,
+            "missing_internal_value": 12,
+            "observation_failure": 62,
+            "producer_not_executed": 1,
+            "wrong_propagated_value": 66
+          },
+          "semantic": {
+            "attempts": 300,
+            "raw_rate": 0.19,
+            "successes": 57
+          },
+          "tasks": 300,
+          "unexpected_calls_per_task": 0.7133333333333334
+        },
+        "standard_v2": {
+          "conditional_propagation": {
+            "attempts": 365,
+            "raw_rate": 0.4767123287671233,
+            "successes": 174
+          },
+          "consumer_not_executed": 109,
+          "consumer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.5140845070422535,
+            "successes": 365
+          },
+          "consumer_task_completion": {
+            "attempts": 300,
+            "raw_rate": 0.41,
+            "successes": 123
+          },
+          "internal_complete": {
+            "attempts": 300,
+            "raw_rate": 0.22,
+            "successes": 66
+          },
+          "internal_e2e": {
+            "attempts": 710,
+            "raw_rate": 0.24507042253521127,
+            "successes": 174
+          },
+          "producer_reach": {
+            "attempts": 710,
+            "raw_rate": 0.9507042253521126,
+            "successes": 675
+          },
+          "redundant_calls_per_task": 0.006666666666666667,
+          "reference_path": {
+            "attempts": 300,
+            "raw_rate": 0.006666666666666667,
+            "successes": 2
+          },
+          "retry_after_error": 82,
+          "root_failure_attribution": {
+            "consumer_not_executed": 109,
+            "missing_internal_value": 38,
+            "observation_failure": 48,
+            "wrong_propagated_value": 72
+          },
+          "semantic": {
+            "attempts": 300,
+            "raw_rate": 0.11,
+            "successes": 33
+          },
+          "tasks": 300,
+          "unexpected_calls_per_task": 0.34
+        }
+      }
+    }
+  },
+  "frozen300": {
+    "depth": {
+      "1": {
+        "graph_v2": {
+          "conditional_propagation": {
+            "attempts": 28,
+            "raw_rate": 0.6071428571428571,
+            "successes": 17
+          },
+          "consumer_not_executed": 93,
+          "consumer_reach": {
+            "attempts": 172,
+            "raw_rate": 0.16279069767441862,
+            "successes": 28
+          },
+          "consumer_task_completion": {
+            "attempts": 120,
+            "raw_rate": 0.225,
+            "successes": 27
+          },
+          "internal_complete": {
+            "attempts": 120,
+            "raw_rate": 0.13333333333333333,
+            "successes": 16
+          },
+          "internal_e2e": {
+            "attempts": 172,
+            "raw_rate": 0.09883720930232558,
+            "successes": 17
+          },
+          "producer_reach": {
+            "attempts": 172,
+            "raw_rate": 1.0,
+            "successes": 172
+          },
+          "redundant_calls_per_task": 0.0,
+          "reference_path": {
+            "attempts": 120,
+            "raw_rate": 0.03333333333333333,
+            "successes": 4
+          },
+          "retry_after_error": 8,
+          "root_failure_attribution": {
+            "consumer_not_executed": 93,
+            "wrong_propagated_value": 3
+          },
+          "semantic": {
+            "attempts": 120,
+            "raw_rate": 0.2,
+            "successes": 24
+          },
+          "tasks": 120,
+          "unexpected_calls_per_task": 0.09166666666666666
+        },
+        "paired_standard_vs_graph": {
+          "consumer_not_executed": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 4.166666666666667,
+            "discordant": 11,
+            "effect_size_pp_right_minus_left": 4.166666666666667,
+            "exact_two_sided_p": 0.2265625,
+            "left_successes": 88,
+            "paired_bootstrap_95_ci_pp": [
+              -0.8333333333333334,
+              10.0
+            ],
+            "paired_support": 120,
+            "right_losses": 3,
+            "right_successes": 93,
+            "right_wins": 8,
+            "shared_n": 120,
+            "ties_both_failure": 24,
+            "ties_both_success": 85
+          },
+          "consumer_task_completion": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -4.166666666666667,
+            "discordant": 11,
+            "effect_size_pp_right_minus_left": -4.166666666666667,
+            "exact_two_sided_p": 0.2265625,
+            "left_successes": 32,
+            "paired_bootstrap_95_ci_pp": [
+              -10.0,
+              0.8333333333333334
+            ],
+            "paired_support": 120,
+            "right_losses": 8,
+            "right_successes": 27,
+            "right_wins": 3,
+            "shared_n": 120,
+            "ties_both_failure": 85,
+            "ties_both_success": 24
+          },
+          "edges": {
+            "conditional_propagation": {
+              "delta_pp": 1.8907563025210017,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 34,
+                "raw_rate": 0.5882352941176471,
+                "successes": 20
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -12.727639296187688,
+                17.005083732057397
+              ],
+              "paired_task_label_permutation_p": 0.8617138286171383,
+              "replicates": 10000,
+              "right": {
+                "attempts": 28,
+                "raw_rate": 0.6071428571428571,
+                "successes": 17
+              },
+              "shared_tasks": 120
+            },
+            "consumer_reach": {
+              "delta_pp": -3.4883720930232536,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 172,
+                "raw_rate": 0.19767441860465115,
+                "successes": 34
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -7.86516853932584,
+                0.5747126436781602
+              ],
+              "paired_task_label_permutation_p": 0.1855814418558144,
+              "replicates": 10000,
+              "right": {
+                "attempts": 172,
+                "raw_rate": 0.16279069767441862,
+                "successes": 28
+              },
+              "shared_tasks": 120
+            },
+            "internal_e2e": {
+              "delta_pp": -1.7441860465116283,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 172,
+                "raw_rate": 0.11627906976744186,
+                "successes": 20
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -6.547619047619048,
+                2.890173410404623
+              ],
+              "paired_task_label_permutation_p": 0.6221377862213778,
+              "replicates": 10000,
+              "right": {
+                "attempts": 172,
+                "raw_rate": 0.09883720930232558,
+                "successes": 17
+              },
+              "shared_tasks": 120
+            },
+            "producer_reach": {
+              "delta_pp": 0.0,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 172,
+                "raw_rate": 1.0,
+                "successes": 172
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.0,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 172,
+                "raw_rate": 1.0,
+                "successes": 172
+              },
+              "shared_tasks": 120
+            }
+          },
+          "reference_path_complete_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 1.6666666666666667,
+            "discordant": 4,
+            "effect_size_pp_right_minus_left": 1.6666666666666667,
+            "exact_two_sided_p": 0.625,
+            "left_successes": 2,
+            "paired_bootstrap_95_ci_pp": [
+              -1.6666666666666667,
+              5.0
+            ],
+            "paired_support": 120,
+            "right_losses": 1,
+            "right_successes": 4,
+            "right_wins": 3,
+            "shared_n": 120,
+            "ties_both_failure": 115,
+            "ties_both_success": 1
+          },
+          "retry_after_error": {
+            "left_total": 13,
+            "mean_delta_per_task": -0.041666666666666664,
+            "paired_bootstrap_95_ci_mean": [
+              -0.08333333333333333,
+              -0.008333333333333333
+            ],
+            "paired_signflip_p": 0.05979402059794021,
+            "right_total": 8,
+            "shared_n": 120,
+            "total_delta": -5
+          },
+          "semantic_task_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -5.833333333333333,
+            "discordant": 15,
+            "effect_size_pp_right_minus_left": -5.833333333333333,
+            "exact_two_sided_p": 0.11846923828125,
+            "left_successes": 31,
+            "paired_bootstrap_95_ci_pp": [
+              -12.5,
+              0.0
+            ],
+            "paired_support": 120,
+            "right_losses": 11,
+            "right_successes": 24,
+            "right_wins": 4,
+            "shared_n": 120,
+            "ties_both_failure": 85,
+            "ties_both_success": 20
+          },
+          "task_level_internal_edge_complete": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -1.6666666666666667,
+            "discordant": 14,
+            "effect_size_pp_right_minus_left": -1.6666666666666667,
+            "exact_two_sided_p": 0.79052734375,
+            "left_successes": 18,
+            "paired_bootstrap_95_ci_pp": [
+              -7.5,
+              4.166666666666667
+            ],
+            "paired_support": 120,
+            "right_losses": 8,
+            "right_successes": 16,
+            "right_wins": 6,
+            "shared_n": 120,
+            "ties_both_failure": 96,
+            "ties_both_success": 10
+          }
+        },
+        "standard_v2": {
+          "conditional_propagation": {
+            "attempts": 34,
+            "raw_rate": 0.5882352941176471,
+            "successes": 20
+          },
+          "consumer_not_executed": 88,
+          "consumer_reach": {
+            "attempts": 172,
+            "raw_rate": 0.19767441860465115,
+            "successes": 34
+          },
+          "consumer_task_completion": {
+            "attempts": 120,
+            "raw_rate": 0.26666666666666666,
+            "successes": 32
+          },
+          "internal_complete": {
+            "attempts": 120,
+            "raw_rate": 0.15,
+            "successes": 18
+          },
+          "internal_e2e": {
+            "attempts": 172,
+            "raw_rate": 0.11627906976744186,
+            "successes": 20
+          },
+          "producer_reach": {
+            "attempts": 172,
+            "raw_rate": 1.0,
+            "successes": 172
+          },
+          "redundant_calls_per_task": 0.0,
+          "reference_path": {
+            "attempts": 120,
+            "raw_rate": 0.016666666666666666,
+            "successes": 2
+          },
+          "retry_after_error": 13,
+          "root_failure_attribution": {
+            "consumer_not_executed": 88,
+            "wrong_propagated_value": 1
+          },
+          "semantic": {
+            "attempts": 120,
+            "raw_rate": 0.25833333333333336,
+            "successes": 31
+          },
+          "tasks": 120,
+          "unexpected_calls_per_task": 0.10833333333333334
+        }
+      },
+      "2": {
+        "graph_v2": {
+          "conditional_propagation": {
+            "attempts": 204,
+            "raw_rate": 0.3137254901960784,
+            "successes": 64
+          },
+          "consumer_not_executed": 17,
+          "consumer_reach": {
+            "attempts": 293,
+            "raw_rate": 0.6962457337883959,
+            "successes": 204
+          },
+          "consumer_task_completion": {
+            "attempts": 110,
+            "raw_rate": 0.5818181818181818,
+            "successes": 64
+          },
+          "internal_complete": {
+            "attempts": 110,
+            "raw_rate": 0.16363636363636364,
+            "successes": 18
+          },
+          "internal_e2e": {
+            "attempts": 293,
+            "raw_rate": 0.21843003412969283,
+            "successes": 64
+          },
+          "producer_reach": {
+            "attempts": 293,
+            "raw_rate": 0.9965870307167235,
+            "successes": 292
+          },
+          "redundant_calls_per_task": 0.18181818181818182,
+          "reference_path": {
+            "attempts": 110,
+            "raw_rate": 0.00909090909090909,
+            "successes": 1
+          },
+          "retry_after_error": 73,
+          "root_failure_attribution": {
+            "consumer_not_executed": 17,
+            "missing_internal_value": 6,
+            "observation_failure": 17,
+            "wrong_propagated_value": 64
+          },
+          "semantic": {
+            "attempts": 110,
+            "raw_rate": 0.05454545454545454,
+            "successes": 6
+          },
+          "tasks": 110,
+          "unexpected_calls_per_task": 0.9818181818181818
+        },
+        "paired_standard_vs_graph": {
+          "consumer_not_executed": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -2.727272727272727,
+            "discordant": 9,
+            "effect_size_pp_right_minus_left": -2.727272727272727,
+            "exact_two_sided_p": 0.5078125,
+            "left_successes": 20,
+            "paired_bootstrap_95_ci_pp": [
+              -8.181818181818182,
+              2.727272727272727
+            ],
+            "paired_support": 110,
+            "right_losses": 6,
+            "right_successes": 17,
+            "right_wins": 3,
+            "shared_n": 110,
+            "ties_both_failure": 87,
+            "ties_both_success": 14
+          },
+          "consumer_task_completion": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 7.2727272727272725,
+            "discordant": 14,
+            "effect_size_pp_right_minus_left": 7.2727272727272725,
+            "exact_two_sided_p": 0.057373046875,
+            "left_successes": 56,
+            "paired_bootstrap_95_ci_pp": [
+              0.9090909090909091,
+              13.636363636363637
+            ],
+            "paired_support": 110,
+            "right_losses": 3,
+            "right_successes": 64,
+            "right_wins": 11,
+            "shared_n": 110,
+            "ties_both_failure": 43,
+            "ties_both_success": 53
+          },
+          "edges": {
+            "conditional_propagation": {
+              "delta_pp": 5.718098757827739,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 191,
+                "raw_rate": 0.25654450261780104,
+                "successes": 49
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                1.0653210846766048,
+                10.654451532204984
+              ],
+              "paired_task_label_permutation_p": 0.021997800219978002,
+              "replicates": 10000,
+              "right": {
+                "attempts": 204,
+                "raw_rate": 0.3137254901960784,
+                "successes": 64
+              },
+              "shared_tasks": 110
+            },
+            "consumer_reach": {
+              "delta_pp": 4.436860068259385,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 293,
+                "raw_rate": 0.6518771331058021,
+                "successes": 191
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.6849315068493175,
+                8.445945945945944
+              ],
+              "paired_task_label_permutation_p": 0.040495950404959506,
+              "replicates": 10000,
+              "right": {
+                "attempts": 293,
+                "raw_rate": 0.6962457337883959,
+                "successes": 204
+              },
+              "shared_tasks": 110
+            },
+            "internal_e2e": {
+              "delta_pp": 5.119453924914677,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 293,
+                "raw_rate": 0.16723549488054607,
+                "successes": 49
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                1.0309278350515454,
+                9.427609427609426
+              ],
+              "paired_task_label_permutation_p": 0.024897510248975102,
+              "replicates": 10000,
+              "right": {
+                "attempts": 293,
+                "raw_rate": 0.21843003412969283,
+                "successes": 64
+              },
+              "shared_tasks": 110
+            },
+            "producer_reach": {
+              "delta_pp": -0.34129692832765013,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 293,
+                "raw_rate": 1.0,
+                "successes": 293
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -1.0526315789473717,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 293,
+                "raw_rate": 0.9965870307167235,
+                "successes": 292
+              },
+              "shared_tasks": 110
+            }
+          },
+          "reference_path_complete_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 0.9090909090909091,
+            "discordant": 1,
+            "effect_size_pp_right_minus_left": 0.9090909090909091,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 0,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              2.727272727272727
+            ],
+            "paired_support": 110,
+            "right_losses": 0,
+            "right_successes": 1,
+            "right_wins": 1,
+            "shared_n": 110,
+            "ties_both_failure": 109,
+            "ties_both_success": 0
+          },
+          "retry_after_error": {
+            "left_total": 35,
+            "mean_delta_per_task": 0.34545454545454546,
+            "paired_bootstrap_95_ci_mean": [
+              0.17272727272727273,
+              0.5545454545454546
+            ],
+            "paired_signflip_p": 0.00019998000199980003,
+            "right_total": 73,
+            "shared_n": 110,
+            "total_delta": 38
+          },
+          "semantic_task_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 3.6363636363636362,
+            "discordant": 6,
+            "effect_size_pp_right_minus_left": 3.6363636363636362,
+            "exact_two_sided_p": 0.21875,
+            "left_successes": 2,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              8.181818181818182
+            ],
+            "paired_support": 110,
+            "right_losses": 1,
+            "right_successes": 6,
+            "right_wins": 5,
+            "shared_n": 110,
+            "ties_both_failure": 103,
+            "ties_both_success": 1
+          },
+          "task_level_internal_edge_complete": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 4.545454545454546,
+            "discordant": 7,
+            "effect_size_pp_right_minus_left": 4.545454545454546,
+            "exact_two_sided_p": 0.125,
+            "left_successes": 13,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              9.090909090909092
+            ],
+            "paired_support": 110,
+            "right_losses": 1,
+            "right_successes": 18,
+            "right_wins": 6,
+            "shared_n": 110,
+            "ties_both_failure": 91,
+            "ties_both_success": 12
+          }
+        },
+        "standard_v2": {
+          "conditional_propagation": {
+            "attempts": 191,
+            "raw_rate": 0.25654450261780104,
+            "successes": 49
+          },
+          "consumer_not_executed": 20,
+          "consumer_reach": {
+            "attempts": 293,
+            "raw_rate": 0.6518771331058021,
+            "successes": 191
+          },
+          "consumer_task_completion": {
+            "attempts": 110,
+            "raw_rate": 0.509090909090909,
+            "successes": 56
+          },
+          "internal_complete": {
+            "attempts": 110,
+            "raw_rate": 0.11818181818181818,
+            "successes": 13
+          },
+          "internal_e2e": {
+            "attempts": 293,
+            "raw_rate": 0.16723549488054607,
+            "successes": 49
+          },
+          "producer_reach": {
+            "attempts": 293,
+            "raw_rate": 1.0,
+            "successes": 293
+          },
+          "redundant_calls_per_task": 0.01818181818181818,
+          "reference_path": {
+            "attempts": 110,
+            "raw_rate": 0.0,
+            "successes": 0
+          },
+          "retry_after_error": 35,
+          "root_failure_attribution": {
+            "consumer_not_executed": 20,
+            "missing_internal_value": 4,
+            "observation_failure": 13,
+            "wrong_propagated_value": 71
+          },
+          "semantic": {
+            "attempts": 110,
+            "raw_rate": 0.01818181818181818,
+            "successes": 2
+          },
+          "tasks": 110,
+          "unexpected_calls_per_task": 0.7909090909090909
+        }
+      },
+      "3+": {
+        "graph_v2": {
+          "conditional_propagation": {
+            "attempts": 140,
+            "raw_rate": 0.75,
+            "successes": 105
+          },
+          "consumer_not_executed": 35,
+          "consumer_reach": {
+            "attempts": 245,
+            "raw_rate": 0.5714285714285714,
+            "successes": 140
+          },
+          "consumer_task_completion": {
+            "attempts": 70,
+            "raw_rate": 0.5,
+            "successes": 35
+          },
+          "internal_complete": {
+            "attempts": 70,
+            "raw_rate": 0.5,
+            "successes": 35
+          },
+          "internal_e2e": {
+            "attempts": 245,
+            "raw_rate": 0.42857142857142855,
+            "successes": 105
+          },
+          "producer_reach": {
+            "attempts": 245,
+            "raw_rate": 0.8571428571428571,
+            "successes": 210
+          },
+          "redundant_calls_per_task": 0.0,
+          "reference_path": {
+            "attempts": 70,
+            "raw_rate": 0.0,
+            "successes": 0
+          },
+          "retry_after_error": 0,
+          "root_failure_attribution": {
+            "consumer_not_executed": 35,
+            "observation_failure": 35
+          },
+          "semantic": {
+            "attempts": 70,
+            "raw_rate": 0.0,
+            "successes": 0
+          },
+          "tasks": 70,
+          "unexpected_calls_per_task": 1.0
+        },
+        "paired_standard_vs_graph": {
+          "consumer_not_executed": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 48.57142857142857,
+            "discordant": 34,
+            "effect_size_pp_right_minus_left": 48.57142857142857,
+            "exact_two_sided_p": 1.1641532182693481e-10,
+            "left_successes": 1,
+            "paired_bootstrap_95_ci_pp": [
+              37.142857142857146,
+              60.0
+            ],
+            "paired_support": 70,
+            "right_losses": 0,
+            "right_successes": 35,
+            "right_wins": 34,
+            "shared_n": 70,
+            "ties_both_failure": 35,
+            "ties_both_success": 1
+          },
+          "consumer_task_completion": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 0.0,
+            "discordant": 0,
+            "effect_size_pp_right_minus_left": 0.0,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 35,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              0.0
+            ],
+            "paired_support": 70,
+            "right_losses": 0,
+            "right_successes": 35,
+            "right_wins": 0,
+            "shared_n": 70,
+            "ties_both_failure": 35,
+            "ties_both_success": 35
+          },
+          "edges": {
+            "conditional_propagation": {
+              "delta_pp": 0.0,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 140,
+                "raw_rate": 0.75,
+                "successes": 105
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.0,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 140,
+                "raw_rate": 0.75,
+                "successes": 105
+              },
+              "shared_tasks": 70
+            },
+            "consumer_reach": {
+              "delta_pp": 0.0,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 245,
+                "raw_rate": 0.5714285714285714,
+                "successes": 140
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.0,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 245,
+                "raw_rate": 0.5714285714285714,
+                "successes": 140
+              },
+              "shared_tasks": 70
+            },
+            "internal_e2e": {
+              "delta_pp": 0.0,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 245,
+                "raw_rate": 0.42857142857142855,
+                "successes": 105
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.0,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 245,
+                "raw_rate": 0.42857142857142855,
+                "successes": 105
+              },
+              "shared_tasks": 70
+            },
+            "producer_reach": {
+              "delta_pp": 0.0,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 245,
+                "raw_rate": 0.8571428571428571,
+                "successes": 210
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.0,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 245,
+                "raw_rate": 0.8571428571428571,
+                "successes": 210
+              },
+              "shared_tasks": 70
+            }
+          },
+          "reference_path_complete_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 0.0,
+            "discordant": 0,
+            "effect_size_pp_right_minus_left": 0.0,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 0,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              0.0
+            ],
+            "paired_support": 70,
+            "right_losses": 0,
+            "right_successes": 0,
+            "right_wins": 0,
+            "shared_n": 70,
+            "ties_both_failure": 70,
+            "ties_both_success": 0
+          },
+          "retry_after_error": {
+            "left_total": 34,
+            "mean_delta_per_task": -0.4857142857142857,
+            "paired_bootstrap_95_ci_mean": [
+              -0.6,
+              -0.37142857142857144
+            ],
+            "paired_signflip_p": 9.999000099990002e-05,
+            "right_total": 0,
+            "shared_n": 70,
+            "total_delta": -34
+          },
+          "semantic_task_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 0.0,
+            "discordant": 0,
+            "effect_size_pp_right_minus_left": 0.0,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 0,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              0.0
+            ],
+            "paired_support": 70,
+            "right_losses": 0,
+            "right_successes": 0,
+            "right_wins": 0,
+            "shared_n": 70,
+            "ties_both_failure": 70,
+            "ties_both_success": 0
+          },
+          "task_level_internal_edge_complete": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 0.0,
+            "discordant": 0,
+            "effect_size_pp_right_minus_left": 0.0,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 35,
+            "paired_bootstrap_95_ci_pp": [
+              0.0,
+              0.0
+            ],
+            "paired_support": 70,
+            "right_losses": 0,
+            "right_successes": 35,
+            "right_wins": 0,
+            "shared_n": 70,
+            "ties_both_failure": 35,
+            "ties_both_success": 35
+          }
+        },
+        "standard_v2": {
+          "conditional_propagation": {
+            "attempts": 140,
+            "raw_rate": 0.75,
+            "successes": 105
+          },
+          "consumer_not_executed": 1,
+          "consumer_reach": {
+            "attempts": 245,
+            "raw_rate": 0.5714285714285714,
+            "successes": 140
+          },
+          "consumer_task_completion": {
+            "attempts": 70,
+            "raw_rate": 0.5,
+            "successes": 35
+          },
+          "internal_complete": {
+            "attempts": 70,
+            "raw_rate": 0.5,
+            "successes": 35
+          },
+          "internal_e2e": {
+            "attempts": 245,
+            "raw_rate": 0.42857142857142855,
+            "successes": 105
+          },
+          "producer_reach": {
+            "attempts": 245,
+            "raw_rate": 0.8571428571428571,
+            "successes": 210
+          },
+          "redundant_calls_per_task": 0.0,
+          "reference_path": {
+            "attempts": 70,
+            "raw_rate": 0.0,
+            "successes": 0
+          },
+          "retry_after_error": 34,
+          "root_failure_attribution": {
+            "consumer_not_executed": 1,
+            "missing_internal_value": 34,
+            "observation_failure": 35
+          },
+          "semantic": {
+            "attempts": 70,
+            "raw_rate": 0.0,
+            "successes": 0
+          },
+          "tasks": 70,
+          "unexpected_calls_per_task": 0.02857142857142857
+        }
+      }
+    },
+    "internal_edge_subset": {
+      "graph_v2": {
+        "conditional_propagation": {
+          "attempts": 372,
+          "raw_rate": 0.5,
+          "successes": 186
+        },
+        "consumer_not_executed": 145,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.523943661971831,
+          "successes": 372
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.42,
+          "successes": 126
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.23,
+          "successes": 69
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.2619718309859155,
+          "successes": 186
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9492957746478873,
+          "successes": 674
+        },
+        "redundant_calls_per_task": 0.06666666666666667,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.016666666666666666,
+          "successes": 5
+        },
+        "retry_after_error": 81,
+        "root_failure_attribution": {
+          "consumer_not_executed": 145,
+          "missing_internal_value": 6,
+          "observation_failure": 52,
+          "wrong_propagated_value": 67
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.1,
+          "successes": 30
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.63
+      },
+      "note": "All frozen-300 tasks contain at least one internal dependency edge.",
+      "paired_standard_vs_graph": {
+        "consumer_not_executed": {
+          "bootstrap_replicates": 10000,
+          "delta_pp": 12.0,
+          "discordant": 54,
+          "effect_size_pp_right_minus_left": 12.0,
+          "exact_two_sided_p": 7.288430776686283e-07,
+          "left_successes": 109,
+          "paired_bootstrap_95_ci_pp": [
+            7.333333333333333,
+            16.666666666666668
+          ],
+          "paired_support": 300,
+          "right_losses": 9,
+          "right_successes": 145,
+          "right_wins": 45,
+          "shared_n": 300,
+          "ties_both_failure": 146,
+          "ties_both_success": 100
+        },
+        "consumer_task_completion": {
+          "bootstrap_replicates": 10000,
+          "delta_pp": 1.0,
+          "discordant": 25,
+          "effect_size_pp_right_minus_left": 1.0,
+          "exact_two_sided_p": 0.6900379657745361,
+          "left_successes": 123,
+          "paired_bootstrap_95_ci_pp": [
+            -2.3333333333333335,
+            4.333333333333333
+          ],
+          "paired_support": 300,
+          "right_losses": 11,
+          "right_successes": 126,
+          "right_wins": 14,
+          "shared_n": 300,
+          "ties_both_failure": 163,
+          "ties_both_success": 112
+        },
+        "edges": {
+          "conditional_propagation": {
+            "delta_pp": 2.3287671232876725,
+            "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+            "left": {
+              "attempts": 365,
+              "raw_rate": 0.4767123287671233,
+              "successes": 174
+            },
+            "paired_cluster_bootstrap_95_ci_pp": [
+              -0.12417257264672214,
+              4.899478669231046
+            ],
+            "paired_task_label_permutation_p": 0.07999200079992001,
+            "replicates": 10000,
+            "right": {
+              "attempts": 372,
+              "raw_rate": 0.5,
+              "successes": 186
+            },
+            "shared_tasks": 300
+          },
+          "consumer_reach": {
+            "delta_pp": 0.9859154929577452,
+            "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+            "left": {
+              "attempts": 710,
+              "raw_rate": 0.5140845070422535,
+              "successes": 365
+            },
+            "paired_cluster_bootstrap_95_ci_pp": [
+              -0.8759124087591275,
+              3.0055427685659226
+            ],
+            "paired_task_label_permutation_p": 0.39236076392360764,
+            "replicates": 10000,
+            "right": {
+              "attempts": 710,
+              "raw_rate": 0.523943661971831,
+              "successes": 372
+            },
+            "shared_tasks": 300
+          },
+          "internal_e2e": {
+            "delta_pp": 1.6901408450704203,
+            "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+            "left": {
+              "attempts": 710,
+              "raw_rate": 0.24507042253521127,
+              "successes": 174
+            },
+            "paired_cluster_bootstrap_95_ci_pp": [
+              -0.4121305418719252,
+              3.8135881863944956
+            ],
+            "paired_task_label_permutation_p": 0.1523847615238476,
+            "replicates": 10000,
+            "right": {
+              "attempts": 710,
+              "raw_rate": 0.2619718309859155,
+              "successes": 186
+            },
+            "shared_tasks": 300
+          },
+          "producer_reach": {
+            "delta_pp": -0.14084507042253502,
+            "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+            "left": {
+              "attempts": 710,
+              "raw_rate": 0.9507042253521126,
+              "successes": 675
+            },
+            "paired_cluster_bootstrap_95_ci_pp": [
+              -0.4322766570605152,
+              0.0
+            ],
+            "paired_task_label_permutation_p": 1.0,
+            "replicates": 10000,
+            "right": {
+              "attempts": 710,
+              "raw_rate": 0.9492957746478873,
+              "successes": 674
+            },
+            "shared_tasks": 300
+          }
+        },
+        "reference_path_complete_success": {
+          "bootstrap_replicates": 10000,
+          "delta_pp": 1.0,
+          "discordant": 5,
+          "effect_size_pp_right_minus_left": 1.0,
+          "exact_two_sided_p": 0.375,
+          "left_successes": 2,
+          "paired_bootstrap_95_ci_pp": [
+            -0.3333333333333333,
+            2.6666666666666665
+          ],
+          "paired_support": 300,
+          "right_losses": 1,
+          "right_successes": 5,
+          "right_wins": 4,
+          "shared_n": 300,
+          "ties_both_failure": 294,
+          "ties_both_success": 1
+        },
+        "retry_after_error": {
+          "left_total": 82,
+          "mean_delta_per_task": -0.0033333333333333335,
+          "paired_bootstrap_95_ci_mean": [
+            -0.08,
+            0.08666666666666667
+          ],
+          "paired_signflip_p": 1.0,
+          "right_total": 81,
+          "shared_n": 300,
+          "total_delta": -1
+        },
+        "semantic_task_success": {
+          "bootstrap_replicates": 10000,
+          "delta_pp": -1.0,
+          "discordant": 21,
+          "effect_size_pp_right_minus_left": -1.0,
+          "exact_two_sided_p": 0.6636238098144531,
+          "left_successes": 33,
+          "paired_bootstrap_95_ci_pp": [
+            -4.0,
+            2.0
+          ],
+          "paired_support": 300,
+          "right_losses": 12,
+          "right_successes": 30,
+          "right_wins": 9,
+          "shared_n": 300,
+          "ties_both_failure": 258,
+          "ties_both_success": 21
+        },
+        "task_level_internal_edge_complete": {
+          "bootstrap_replicates": 10000,
+          "delta_pp": 1.0,
+          "discordant": 21,
+          "effect_size_pp_right_minus_left": 1.0,
+          "exact_two_sided_p": 0.6636238098144531,
+          "left_successes": 66,
+          "paired_bootstrap_95_ci_pp": [
+            -2.0,
+            4.0
+          ],
+          "paired_support": 300,
+          "right_losses": 9,
+          "right_successes": 69,
+          "right_wins": 12,
+          "shared_n": 300,
+          "ties_both_failure": 222,
+          "ties_both_success": 57
+        }
+      },
+      "standard_v2": {
+        "conditional_propagation": {
+          "attempts": 365,
+          "raw_rate": 0.4767123287671233,
+          "successes": 174
+        },
+        "consumer_not_executed": 109,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.5140845070422535,
+          "successes": 365
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.41,
+          "successes": 123
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.22,
+          "successes": 66
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.24507042253521127,
+          "successes": 174
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9507042253521126,
+          "successes": 675
+        },
+        "redundant_calls_per_task": 0.006666666666666667,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.006666666666666667,
+          "successes": 2
+        },
+        "retry_after_error": 82,
+        "root_failure_attribution": {
+          "consumer_not_executed": 109,
+          "missing_internal_value": 38,
+          "observation_failure": 48,
+          "wrong_propagated_value": 72
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.11,
+          "successes": 33
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.34
+      }
+    },
+    "models": {
+      "base": {
+        "conditional_propagation": {
+          "attempts": 188,
+          "raw_rate": 0.07446808510638298,
+          "successes": 14
+        },
+        "consumer_not_executed": 0,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.2647887323943662,
+          "successes": 188
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.27,
+          "successes": 81
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.04666666666666667,
+          "successes": 14
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.01971830985915493,
+          "successes": 14
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.2915492957746479,
+          "successes": 207
+        },
+        "redundant_calls_per_task": 0.47,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.0,
+          "successes": 0
+        },
+        "retry_after_error": 138,
+        "root_failure_attribution": {
+          "producer_not_executed": 200,
+          "wrong_propagated_value": 72
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.09333333333333334,
+          "successes": 28
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.22
+      },
+      "dynamic_v1": {
+        "conditional_propagation": {
+          "attempts": 428,
+          "raw_rate": 0.5537383177570093,
+          "successes": 237
+        },
+        "consumer_not_executed": 102,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.6028169014084507,
+          "successes": 428
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.5533333333333333,
+          "successes": 166
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.32666666666666666,
+          "successes": 98
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.33380281690140845,
+          "successes": 237
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9478873239436619,
+          "successes": 673
+        },
+        "redundant_calls_per_task": 0.06333333333333334,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.07666666666666666,
+          "successes": 23
+        },
+        "retry_after_error": 94,
+        "root_failure_attribution": {
+          "consumer_not_executed": 102,
+          "missing_internal_value": 12,
+          "observation_failure": 62,
+          "producer_not_executed": 1,
+          "wrong_propagated_value": 66
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.19,
+          "successes": 57
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.7133333333333334
+      },
+      "dynamic_v2": {
+        "conditional_propagation": {
+          "attempts": 422,
+          "raw_rate": 0.5402843601895735,
+          "successes": 228
+        },
+        "consumer_not_executed": 102,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.5943661971830986,
+          "successes": 422
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.5433333333333333,
+          "successes": 163
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.31666666666666665,
+          "successes": 95
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.3211267605633803,
+          "successes": 228
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9450704225352112,
+          "successes": 671
+        },
+        "redundant_calls_per_task": 0.10333333333333333,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.056666666666666664,
+          "successes": 17
+        },
+        "retry_after_error": 101,
+        "root_failure_attribution": {
+          "consumer_not_executed": 102,
+          "missing_internal_value": 11,
+          "observation_failure": 60,
+          "producer_not_executed": 4,
+          "wrong_propagated_value": 68
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.18333333333333332,
+          "successes": 55
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.6433333333333333
+      },
+      "graph_v2": {
+        "conditional_propagation": {
+          "attempts": 372,
+          "raw_rate": 0.5,
+          "successes": 186
+        },
+        "consumer_not_executed": 145,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.523943661971831,
+          "successes": 372
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.42,
+          "successes": 126
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.23,
+          "successes": 69
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.2619718309859155,
+          "successes": 186
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9492957746478873,
+          "successes": 674
+        },
+        "redundant_calls_per_task": 0.06666666666666667,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.016666666666666666,
+          "successes": 5
+        },
+        "retry_after_error": 81,
+        "root_failure_attribution": {
+          "consumer_not_executed": 145,
+          "missing_internal_value": 6,
+          "observation_failure": 52,
+          "wrong_propagated_value": 67
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.1,
+          "successes": 30
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.63
+      },
+      "original_sft": {
+        "conditional_propagation": {
+          "attempts": 390,
+          "raw_rate": 0.5025641025641026,
+          "successes": 196
+        },
+        "consumer_not_executed": 129,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.5492957746478874,
+          "successes": 390
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.45666666666666667,
+          "successes": 137
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.24333333333333335,
+          "successes": 73
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.27605633802816903,
+          "successes": 196
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9507042253521126,
+          "successes": 675
+        },
+        "redundant_calls_per_task": 0.06333333333333334,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.023333333333333334,
+          "successes": 7
+        },
+        "retry_after_error": 68,
+        "root_failure_attribution": {
+          "consumer_not_executed": 129,
+          "missing_internal_value": 10,
+          "observation_failure": 41,
+          "wrong_propagated_value": 79
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.13666666666666666,
+          "successes": 41
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.6433333333333333
+      },
+      "parameter_aware": {
+        "conditional_propagation": {
+          "attempts": 407,
+          "raw_rate": 0.15724815724815724,
+          "successes": 64
+        },
+        "consumer_not_executed": 106,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.5732394366197183,
+          "successes": 407
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.5266666666666666,
+          "successes": 158
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.10666666666666667,
+          "successes": 32
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.09014084507042254,
+          "successes": 64
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9464788732394366,
+          "successes": 672
+        },
+        "redundant_calls_per_task": 0.06666666666666667,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.06333333333333334,
+          "successes": 19
+        },
+        "retry_after_error": 115,
+        "root_failure_attribution": {
+          "consumer_not_executed": 106,
+          "missing_internal_value": 7,
+          "observation_failure": 16,
+          "producer_not_executed": 3,
+          "wrong_propagated_value": 113
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.18333333333333332,
+          "successes": 55
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.8833333333333333
+      },
+      "standard_v2": {
+        "conditional_propagation": {
+          "attempts": 365,
+          "raw_rate": 0.4767123287671233,
+          "successes": 174
+        },
+        "consumer_not_executed": 109,
+        "consumer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.5140845070422535,
+          "successes": 365
+        },
+        "consumer_task_completion": {
+          "attempts": 300,
+          "raw_rate": 0.41,
+          "successes": 123
+        },
+        "internal_complete": {
+          "attempts": 300,
+          "raw_rate": 0.22,
+          "successes": 66
+        },
+        "internal_e2e": {
+          "attempts": 710,
+          "raw_rate": 0.24507042253521127,
+          "successes": 174
+        },
+        "producer_reach": {
+          "attempts": 710,
+          "raw_rate": 0.9507042253521126,
+          "successes": 675
+        },
+        "redundant_calls_per_task": 0.006666666666666667,
+        "reference_path": {
+          "attempts": 300,
+          "raw_rate": 0.006666666666666667,
+          "successes": 2
+        },
+        "retry_after_error": 82,
+        "root_failure_attribution": {
+          "consumer_not_executed": 109,
+          "missing_internal_value": 38,
+          "observation_failure": 48,
+          "wrong_propagated_value": 72
+        },
+        "semantic": {
+          "attempts": 300,
+          "raw_rate": 0.11,
+          "successes": 33
+        },
+        "tasks": 300,
+        "unexpected_calls_per_task": 0.34
+      }
+    },
+    "paired_standard_vs_graph": {
+      "consumer_not_executed": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": 12.0,
+        "discordant": 54,
+        "effect_size_pp_right_minus_left": 12.0,
+        "exact_two_sided_p": 7.288430776686283e-07,
+        "left_successes": 109,
+        "paired_bootstrap_95_ci_pp": [
+          7.333333333333333,
+          16.666666666666668
+        ],
+        "paired_support": 300,
+        "right_losses": 9,
+        "right_successes": 145,
+        "right_wins": 45,
+        "shared_n": 300,
+        "ties_both_failure": 146,
+        "ties_both_success": 100
+      },
+      "consumer_task_completion": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": 1.0,
+        "discordant": 25,
+        "effect_size_pp_right_minus_left": 1.0,
+        "exact_two_sided_p": 0.6900379657745361,
+        "left_successes": 123,
+        "paired_bootstrap_95_ci_pp": [
+          -2.3333333333333335,
+          4.333333333333333
+        ],
+        "paired_support": 300,
+        "right_losses": 11,
+        "right_successes": 126,
+        "right_wins": 14,
+        "shared_n": 300,
+        "ties_both_failure": 163,
+        "ties_both_success": 112
+      },
+      "edges": {
+        "conditional_propagation": {
+          "delta_pp": 2.3287671232876725,
+          "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+          "left": {
+            "attempts": 365,
+            "raw_rate": 0.4767123287671233,
+            "successes": 174
+          },
+          "paired_cluster_bootstrap_95_ci_pp": [
+            -0.12417257264672214,
+            4.899478669231046
+          ],
+          "paired_task_label_permutation_p": 0.07999200079992001,
+          "replicates": 10000,
+          "right": {
+            "attempts": 372,
+            "raw_rate": 0.5,
+            "successes": 186
+          },
+          "shared_tasks": 300
+        },
+        "consumer_reach": {
+          "delta_pp": 0.9859154929577452,
+          "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+          "left": {
+            "attempts": 710,
+            "raw_rate": 0.5140845070422535,
+            "successes": 365
+          },
+          "paired_cluster_bootstrap_95_ci_pp": [
+            -0.8759124087591275,
+            3.0055427685659226
+          ],
+          "paired_task_label_permutation_p": 0.39236076392360764,
+          "replicates": 10000,
+          "right": {
+            "attempts": 710,
+            "raw_rate": 0.523943661971831,
+            "successes": 372
+          },
+          "shared_tasks": 300
+        },
+        "internal_e2e": {
+          "delta_pp": 1.6901408450704203,
+          "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+          "left": {
+            "attempts": 710,
+            "raw_rate": 0.24507042253521127,
+            "successes": 174
+          },
+          "paired_cluster_bootstrap_95_ci_pp": [
+            -0.4121305418719252,
+            3.8135881863944956
+          ],
+          "paired_task_label_permutation_p": 0.1523847615238476,
+          "replicates": 10000,
+          "right": {
+            "attempts": 710,
+            "raw_rate": 0.2619718309859155,
+            "successes": 186
+          },
+          "shared_tasks": 300
+        },
+        "producer_reach": {
+          "delta_pp": -0.14084507042253502,
+          "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+          "left": {
+            "attempts": 710,
+            "raw_rate": 0.9507042253521126,
+            "successes": 675
+          },
+          "paired_cluster_bootstrap_95_ci_pp": [
+            -0.4322766570605152,
+            0.0
+          ],
+          "paired_task_label_permutation_p": 1.0,
+          "replicates": 10000,
+          "right": {
+            "attempts": 710,
+            "raw_rate": 0.9492957746478873,
+            "successes": 674
+          },
+          "shared_tasks": 300
+        }
+      },
+      "reference_path_complete_success": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": 1.0,
+        "discordant": 5,
+        "effect_size_pp_right_minus_left": 1.0,
+        "exact_two_sided_p": 0.375,
+        "left_successes": 2,
+        "paired_bootstrap_95_ci_pp": [
+          -0.3333333333333333,
+          2.6666666666666665
+        ],
+        "paired_support": 300,
+        "right_losses": 1,
+        "right_successes": 5,
+        "right_wins": 4,
+        "shared_n": 300,
+        "ties_both_failure": 294,
+        "ties_both_success": 1
+      },
+      "retry_after_error": {
+        "left_total": 82,
+        "mean_delta_per_task": -0.0033333333333333335,
+        "paired_bootstrap_95_ci_mean": [
+          -0.08333333333333333,
+          0.08666666666666667
+        ],
+        "paired_signflip_p": 1.0,
+        "right_total": 81,
+        "shared_n": 300,
+        "total_delta": -1
+      },
+      "semantic_task_success": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": -1.0,
+        "discordant": 21,
+        "effect_size_pp_right_minus_left": -1.0,
+        "exact_two_sided_p": 0.6636238098144531,
+        "left_successes": 33,
+        "paired_bootstrap_95_ci_pp": [
+          -4.0,
+          2.0
+        ],
+        "paired_support": 300,
+        "right_losses": 12,
+        "right_successes": 30,
+        "right_wins": 9,
+        "shared_n": 300,
+        "ties_both_failure": 258,
+        "ties_both_success": 21
+      },
+      "task_level_internal_edge_complete": {
+        "bootstrap_replicates": 10000,
+        "delta_pp": 1.0,
+        "discordant": 21,
+        "effect_size_pp_right_minus_left": 1.0,
+        "exact_two_sided_p": 0.6636238098144531,
+        "left_successes": 66,
+        "paired_bootstrap_95_ci_pp": [
+          -2.0,
+          4.0
+        ],
+        "paired_support": 300,
+        "right_losses": 9,
+        "right_successes": 69,
+        "right_wins": 12,
+        "shared_n": 300,
+        "ties_both_failure": 222,
+        "ties_both_success": 57
+      }
+    },
+    "runtime": {
+      "base": {
+        "completed": 300,
+        "runtime_seconds_sum": 1552.3461517374963,
+        "system_errors": {},
+        "valid": 300
+      },
+      "dynamic_v1": {
+        "completed": 300,
+        "runtime_seconds_sum": 1132.0179637167603,
+        "system_errors": {},
+        "valid": 300
+      },
+      "dynamic_v2": {
+        "completed": 300,
+        "runtime_seconds_sum": 1162.9328785128891,
+        "system_errors": {},
+        "valid": 300
+      },
+      "graph_v2": {
+        "completed": 300,
+        "runtime_seconds_sum": 1040.464455673471,
+        "system_errors": {},
+        "valid": 300
+      },
+      "original_sft": {
+        "completed": 300,
+        "runtime_seconds_sum": 1164.3143885657191,
+        "system_errors": {},
+        "valid": 300
+      },
+      "parameter_aware": {
+        "completed": 300,
+        "runtime_seconds_sum": 1271.0675614885986,
+        "system_errors": {},
+        "valid": 300
+      },
+      "standard_v2": {
+        "completed": 300,
+        "runtime_seconds_sum": 1037.6449908073992,
+        "system_errors": {},
+        "valid": 300
+      }
+    },
+    "split": {
+      "diagnosis": {
+        "graph_v2": {
+          "conditional_propagation": {
+            "attempts": 307,
+            "raw_rate": 0.5146579804560261,
+            "successes": 158
+          },
+          "consumer_not_executed": 113,
+          "consumer_reach": {
+            "attempts": 569,
+            "raw_rate": 0.539543057996485,
+            "successes": 307
+          },
+          "consumer_task_completion": {
+            "attempts": 240,
+            "raw_rate": 0.4375,
+            "successes": 105
+          },
+          "internal_complete": {
+            "attempts": 240,
+            "raw_rate": 0.24166666666666667,
+            "successes": 58
+          },
+          "internal_e2e": {
+            "attempts": 569,
+            "raw_rate": 0.27768014059753954,
+            "successes": 158
+          },
+          "producer_reach": {
+            "attempts": 569,
+            "raw_rate": 0.9490333919156415,
+            "successes": 540
+          },
+          "redundant_calls_per_task": 0.075,
+          "reference_path": {
+            "attempts": 240,
+            "raw_rate": 0.020833333333333332,
+            "successes": 5
+          },
+          "retry_after_error": 66,
+          "root_failure_attribution": {
+            "consumer_not_executed": 113,
+            "missing_internal_value": 5,
+            "observation_failure": 45,
+            "wrong_propagated_value": 53
+          },
+          "semantic": {
+            "attempts": 240,
+            "raw_rate": 0.1,
+            "successes": 24
+          },
+          "tasks": 240,
+          "unexpected_calls_per_task": 0.6208333333333333
+        },
+        "paired_standard_vs_graph": {
+          "consumer_not_executed": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 11.25,
+            "discordant": 43,
+            "effect_size_pp_right_minus_left": 11.25,
+            "exact_two_sided_p": 4.1934157934520044e-05,
+            "left_successes": 86,
+            "paired_bootstrap_95_ci_pp": [
+              6.25,
+              16.666666666666668
+            ],
+            "paired_support": 240,
+            "right_losses": 8,
+            "right_successes": 113,
+            "right_wins": 35,
+            "shared_n": 240,
+            "ties_both_failure": 119,
+            "ties_both_success": 78
+          },
+          "consumer_task_completion": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 1.6666666666666667,
+            "discordant": 22,
+            "effect_size_pp_right_minus_left": 1.6666666666666667,
+            "exact_two_sided_p": 0.5234670639038086,
+            "left_successes": 101,
+            "paired_bootstrap_95_ci_pp": [
+              -2.0833333333333335,
+              5.416666666666667
+            ],
+            "paired_support": 240,
+            "right_losses": 9,
+            "right_successes": 105,
+            "right_wins": 13,
+            "shared_n": 240,
+            "ties_both_failure": 126,
+            "ties_both_success": 92
+          },
+          "edges": {
+            "conditional_propagation": {
+              "delta_pp": 3.305262928545749,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 299,
+                "raw_rate": 0.4816053511705686,
+                "successes": 144
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.7607468042815502,
+                6.178733034450936
+              ],
+              "paired_task_label_permutation_p": 0.018098190180981903,
+              "replicates": 10000,
+              "right": {
+                "attempts": 307,
+                "raw_rate": 0.5146579804560261,
+                "successes": 158
+              },
+              "shared_tasks": 240
+            },
+            "consumer_reach": {
+              "delta_pp": 1.405975395430581,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 569,
+                "raw_rate": 0.5254833040421792,
+                "successes": 299
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -0.7130124777183611,
+                3.664965095986036
+              ],
+              "paired_task_label_permutation_p": 0.2696730326967303,
+              "replicates": 10000,
+              "right": {
+                "attempts": 569,
+                "raw_rate": 0.539543057996485,
+                "successes": 307
+              },
+              "shared_tasks": 240
+            },
+            "internal_e2e": {
+              "delta_pp": 2.460456942003514,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 569,
+                "raw_rate": 0.2530755711775044,
+                "successes": 144
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.1763668430335097,
+                4.844290657439448
+              ],
+              "paired_task_label_permutation_p": 0.054594540545945404,
+              "replicates": 10000,
+              "right": {
+                "attempts": 569,
+                "raw_rate": 0.27768014059753954,
+                "successes": 158
+              },
+              "shared_tasks": 240
+            },
+            "producer_reach": {
+              "delta_pp": -0.17574692442882123,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 569,
+                "raw_rate": 0.9507908611599297,
+                "successes": 541
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -0.545454545454549,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 569,
+                "raw_rate": 0.9490333919156415,
+                "successes": 540
+              },
+              "shared_tasks": 240
+            }
+          },
+          "reference_path_complete_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 1.6666666666666667,
+            "discordant": 4,
+            "effect_size_pp_right_minus_left": 1.6666666666666667,
+            "exact_two_sided_p": 0.125,
+            "left_successes": 1,
+            "paired_bootstrap_95_ci_pp": [
+              0.4166666666666667,
+              3.3333333333333335
+            ],
+            "paired_support": 240,
+            "right_losses": 0,
+            "right_successes": 5,
+            "right_wins": 4,
+            "shared_n": 240,
+            "ties_both_failure": 235,
+            "ties_both_success": 1
+          },
+          "retry_after_error": {
+            "left_total": 61,
+            "mean_delta_per_task": 0.020833333333333332,
+            "paired_bootstrap_95_ci_mean": [
+              -0.07083333333333333,
+              0.125
+            ],
+            "paired_signflip_p": 0.7438256174382561,
+            "right_total": 66,
+            "shared_n": 240,
+            "total_delta": 5
+          },
+          "semantic_task_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 0.0,
+            "discordant": 18,
+            "effect_size_pp_right_minus_left": 0.0,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 24,
+            "paired_bootstrap_95_ci_pp": [
+              -3.3333333333333335,
+              3.3333333333333335
+            ],
+            "paired_support": 240,
+            "right_losses": 9,
+            "right_successes": 24,
+            "right_wins": 9,
+            "shared_n": 240,
+            "ties_both_failure": 207,
+            "ties_both_success": 15
+          },
+          "task_level_internal_edge_complete": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 2.0833333333333335,
+            "discordant": 19,
+            "effect_size_pp_right_minus_left": 2.0833333333333335,
+            "exact_two_sided_p": 0.359283447265625,
+            "left_successes": 53,
+            "paired_bootstrap_95_ci_pp": [
+              -1.6666666666666667,
+              5.833333333333333
+            ],
+            "paired_support": 240,
+            "right_losses": 7,
+            "right_successes": 58,
+            "right_wins": 12,
+            "shared_n": 240,
+            "ties_both_failure": 175,
+            "ties_both_success": 46
+          }
+        },
+        "standard_v2": {
+          "conditional_propagation": {
+            "attempts": 299,
+            "raw_rate": 0.4816053511705686,
+            "successes": 144
+          },
+          "consumer_not_executed": 86,
+          "consumer_reach": {
+            "attempts": 569,
+            "raw_rate": 0.5254833040421792,
+            "successes": 299
+          },
+          "consumer_task_completion": {
+            "attempts": 240,
+            "raw_rate": 0.42083333333333334,
+            "successes": 101
+          },
+          "internal_complete": {
+            "attempts": 240,
+            "raw_rate": 0.22083333333333333,
+            "successes": 53
+          },
+          "internal_e2e": {
+            "attempts": 569,
+            "raw_rate": 0.2530755711775044,
+            "successes": 144
+          },
+          "producer_reach": {
+            "attempts": 569,
+            "raw_rate": 0.9507908611599297,
+            "successes": 541
+          },
+          "redundant_calls_per_task": 0.004166666666666667,
+          "reference_path": {
+            "attempts": 240,
+            "raw_rate": 0.004166666666666667,
+            "successes": 1
+          },
+          "retry_after_error": 61,
+          "root_failure_attribution": {
+            "consumer_not_executed": 86,
+            "missing_internal_value": 31,
+            "observation_failure": 41,
+            "wrong_propagated_value": 58
+          },
+          "semantic": {
+            "attempts": 240,
+            "raw_rate": 0.1,
+            "successes": 24
+          },
+          "tasks": 240,
+          "unexpected_calls_per_task": 0.3333333333333333
+        }
+      },
+      "heldout": {
+        "graph_v2": {
+          "conditional_propagation": {
+            "attempts": 65,
+            "raw_rate": 0.4307692307692308,
+            "successes": 28
+          },
+          "consumer_not_executed": 32,
+          "consumer_reach": {
+            "attempts": 141,
+            "raw_rate": 0.46099290780141844,
+            "successes": 65
+          },
+          "consumer_task_completion": {
+            "attempts": 60,
+            "raw_rate": 0.35,
+            "successes": 21
+          },
+          "internal_complete": {
+            "attempts": 60,
+            "raw_rate": 0.18333333333333332,
+            "successes": 11
+          },
+          "internal_e2e": {
+            "attempts": 141,
+            "raw_rate": 0.19858156028368795,
+            "successes": 28
+          },
+          "producer_reach": {
+            "attempts": 141,
+            "raw_rate": 0.950354609929078,
+            "successes": 134
+          },
+          "redundant_calls_per_task": 0.03333333333333333,
+          "reference_path": {
+            "attempts": 60,
+            "raw_rate": 0.0,
+            "successes": 0
+          },
+          "retry_after_error": 15,
+          "root_failure_attribution": {
+            "consumer_not_executed": 32,
+            "missing_internal_value": 1,
+            "observation_failure": 7,
+            "wrong_propagated_value": 14
+          },
+          "semantic": {
+            "attempts": 60,
+            "raw_rate": 0.1,
+            "successes": 6
+          },
+          "tasks": 60,
+          "unexpected_calls_per_task": 0.6666666666666666
+        },
+        "paired_standard_vs_graph": {
+          "consumer_not_executed": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": 15.0,
+            "discordant": 11,
+            "effect_size_pp_right_minus_left": 15.0,
+            "exact_two_sided_p": 0.01171875,
+            "left_successes": 23,
+            "paired_bootstrap_95_ci_pp": [
+              5.0,
+              25.0
+            ],
+            "paired_support": 60,
+            "right_losses": 1,
+            "right_successes": 32,
+            "right_wins": 10,
+            "shared_n": 60,
+            "ties_both_failure": 27,
+            "ties_both_success": 22
+          },
+          "consumer_task_completion": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -1.6666666666666667,
+            "discordant": 3,
+            "effect_size_pp_right_minus_left": -1.6666666666666667,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 22,
+            "paired_bootstrap_95_ci_pp": [
+              -6.666666666666667,
+              3.3333333333333335
+            ],
+            "paired_support": 60,
+            "right_losses": 2,
+            "right_successes": 21,
+            "right_wins": 1,
+            "shared_n": 60,
+            "ties_both_failure": 37,
+            "ties_both_success": 20
+          },
+          "edges": {
+            "conditional_propagation": {
+              "delta_pp": -2.377622377622374,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 66,
+                "raw_rate": 0.45454545454545453,
+                "successes": 30
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -10.095004927321998,
+                5.012251875438955
+              ],
+              "paired_task_label_permutation_p": 0.6681331866813318,
+              "replicates": 10000,
+              "right": {
+                "attempts": 65,
+                "raw_rate": 0.4307692307692308,
+                "successes": 28
+              },
+              "shared_tasks": 60
+            },
+            "consumer_reach": {
+              "delta_pp": -0.7092198581560294,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 141,
+                "raw_rate": 0.46808510638297873,
+                "successes": 66
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -5.072463768115942,
+                3.472222222222221
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 141,
+                "raw_rate": 0.46099290780141844,
+                "successes": 65
+              },
+              "shared_tasks": 60
+            },
+            "internal_e2e": {
+              "delta_pp": -1.4184397163120561,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 141,
+                "raw_rate": 0.2127659574468085,
+                "successes": 30
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                -6.4,
+                3.472222222222221
+              ],
+              "paired_task_label_permutation_p": 0.7889211078892111,
+              "replicates": 10000,
+              "right": {
+                "attempts": 141,
+                "raw_rate": 0.19858156028368795,
+                "successes": 28
+              },
+              "shared_tasks": 60
+            },
+            "producer_reach": {
+              "delta_pp": 0.0,
+              "denominator_note": "same paired tasks and identical gold edges; conditional propagation retains its reached-consumer denominator",
+              "left": {
+                "attempts": 141,
+                "raw_rate": 0.950354609929078,
+                "successes": 134
+              },
+              "paired_cluster_bootstrap_95_ci_pp": [
+                0.0,
+                0.0
+              ],
+              "paired_task_label_permutation_p": 1.0,
+              "replicates": 10000,
+              "right": {
+                "attempts": 141,
+                "raw_rate": 0.950354609929078,
+                "successes": 134
+              },
+              "shared_tasks": 60
+            }
+          },
+          "reference_path_complete_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -1.6666666666666667,
+            "discordant": 1,
+            "effect_size_pp_right_minus_left": -1.6666666666666667,
+            "exact_two_sided_p": 1.0,
+            "left_successes": 1,
+            "paired_bootstrap_95_ci_pp": [
+              -5.0,
+              0.0
+            ],
+            "paired_support": 60,
+            "right_losses": 1,
+            "right_successes": 0,
+            "right_wins": 0,
+            "shared_n": 60,
+            "ties_both_failure": 59,
+            "ties_both_success": 0
+          },
+          "retry_after_error": {
+            "left_total": 21,
+            "mean_delta_per_task": -0.1,
+            "paired_bootstrap_95_ci_mean": [
+              -0.25,
+              0.05
+            ],
+            "paired_signflip_p": 0.266973302669733,
+            "right_total": 15,
+            "shared_n": 60,
+            "total_delta": -6
+          },
+          "semantic_task_success": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -5.0,
+            "discordant": 3,
+            "effect_size_pp_right_minus_left": -5.0,
+            "exact_two_sided_p": 0.25,
+            "left_successes": 9,
+            "paired_bootstrap_95_ci_pp": [
+              -11.666666666666666,
+              0.0
+            ],
+            "paired_support": 60,
+            "right_losses": 3,
+            "right_successes": 6,
+            "right_wins": 0,
+            "shared_n": 60,
+            "ties_both_failure": 51,
+            "ties_both_success": 6
+          },
+          "task_level_internal_edge_complete": {
+            "bootstrap_replicates": 10000,
+            "delta_pp": -3.3333333333333335,
+            "discordant": 2,
+            "effect_size_pp_right_minus_left": -3.3333333333333335,
+            "exact_two_sided_p": 0.5,
+            "left_successes": 13,
+            "paired_bootstrap_95_ci_pp": [
+              -8.333333333333334,
+              0.0
+            ],
+            "paired_support": 60,
+            "right_losses": 2,
+            "right_successes": 11,
+            "right_wins": 0,
+            "shared_n": 60,
+            "ties_both_failure": 47,
+            "ties_both_success": 11
+          }
+        },
+        "standard_v2": {
+          "conditional_propagation": {
+            "attempts": 66,
+            "raw_rate": 0.45454545454545453,
+            "successes": 30
+          },
+          "consumer_not_executed": 23,
+          "consumer_reach": {
+            "attempts": 141,
+            "raw_rate": 0.46808510638297873,
+            "successes": 66
+          },
+          "consumer_task_completion": {
+            "attempts": 60,
+            "raw_rate": 0.36666666666666664,
+            "successes": 22
+          },
+          "internal_complete": {
+            "attempts": 60,
+            "raw_rate": 0.21666666666666667,
+            "successes": 13
+          },
+          "internal_e2e": {
+            "attempts": 141,
+            "raw_rate": 0.2127659574468085,
+            "successes": 30
+          },
+          "producer_reach": {
+            "attempts": 141,
+            "raw_rate": 0.950354609929078,
+            "successes": 134
+          },
+          "redundant_calls_per_task": 0.016666666666666666,
+          "reference_path": {
+            "attempts": 60,
+            "raw_rate": 0.016666666666666666,
+            "successes": 1
+          },
+          "retry_after_error": 21,
+          "root_failure_attribution": {
+            "consumer_not_executed": 23,
+            "missing_internal_value": 7,
+            "observation_failure": 7,
+            "wrong_propagated_value": 14
+          },
+          "semantic": {
+            "attempts": 60,
+            "raw_rate": 0.15,
+            "successes": 9
+          },
+          "tasks": 60,
+          "unexpected_calls_per_task": 0.36666666666666664
+        }
+      }
+    }
+  },
+  "full_rl_status": "FULL_RL_NOT_STARTED",
+  "limitations": [
+    "Paired task-level binary outcomes use exact McNemar tests and deterministic paired bootstrap confidence intervals.",
+    "Edge metrics use task-cluster bootstrap and paired task-label permutation; edges within a task are not treated as independent.",
+    "The held-out split has 60 tasks, so its confidence intervals are wide and directions are not over-interpreted.",
+    "Conditional propagation uses reached consumers as its protocol-defined denominator; reach and internal E2E use the identical 710 gold-edge denominator."
+  ],
+  "mechanism_interpretation": {
+    "conclusion": "The Graph reward shows a diagnosis-local parameter-flow signal, but it is not robust enough to justify full RL.",
+    "consumer_not_executed": "Graph has significantly more failures whose first attributed root is consumer_not_executed. This is partly an attribution redistribution (especially at depth 3+, where edge outcomes are identical but missing_internal shifts to consumer_not_executed), not evidence that every count difference represents a newly unexecuted consumer.",
+    "pilot_transfer": "The diagnosis240 propagation/E2E gain did not reproduce on heldout60; heldout directions reversed."
+  },
+  "protocol": {
+    "bfcl": {
+      "backend": "sglang",
+      "context_length": 40960,
+      "examples": 800,
+      "max_total_tokens": 65536,
+      "single_gpu_per_model": true,
+      "temperature": 0.7,
+      "version": "V3 Multi-Turn"
+    },
+    "count": 300,
+    "depth_distribution": {
+      "1": 120,
+      "2": 110,
+      "3+": 70
+    },
+    "environment_distribution": {
+      "Calendar": 32,
+      "GoogleTasks": 80,
+      "TradingBot": 68,
+      "UUPaoTui": 68,
+      "Weather": 52
+    },
+    "frozen_inference": {
+      "environment_reset": "fresh client id and load_scenario",
+      "max_new_tokens": 1024,
+      "max_tool_calls": 8,
+      "max_tool_rounds": 4,
+      "max_turns": 1,
+      "presence_penalty": 0.0,
+      "probe_timeout_seconds": 120,
+      "retry_policy": "no outer retry",
+      "stop_condition": "first no-tool response or four rounds",
+      "temperature": 0.0,
+      "thinking": false,
+      "top_p": 1.0
+    },
+    "gold_internal_edges": 710,
+    "manifest_sha256": "4ea5304d6f76294d70166260986767795fa0bf3fcf54b6196ee0c3f71e70f51c",
+    "mcp_isolation": {
+      "all_roundtrip_equal": true,
+      "arms": {
+        "graph": {
+          "arm": "graph",
+          "config": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/mcp_isolation_config.json",
+          "ok": true,
+          "pid": 14421,
+          "servers": {
+            "Calendar": {
+              "client_id": "Calendar-gf-v2-isolation-graph",
+              "expected_sha256": "ac7183f28a85120741f017f4f03c16f12490f5647f21444c5ffa30484f3276dc",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "ac7183f28a85120741f017f4f03c16f12490f5647f21444c5ffa30484f3276dc",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/graph_Calendar_scenario.json"
+            },
+            "GoogleTasks": {
+              "client_id": "GoogleTasks-gf-v2-isolation-graph",
+              "expected_sha256": "24aed076c343928e3b6b5ea90962d5066932d823c521ae30136bbe3fdb334de7",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "24aed076c343928e3b6b5ea90962d5066932d823c521ae30136bbe3fdb334de7",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/graph_GoogleTasks_scenario.json"
+            },
+            "TradingBot": {
+              "client_id": "TradingBot-gf-v2-isolation-graph",
+              "expected_sha256": "0ecea13874f970da285b6a1f5b0e9855b5e9c264d04a480ab0ab10e03ca83cf2",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "0ecea13874f970da285b6a1f5b0e9855b5e9c264d04a480ab0ab10e03ca83cf2",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/graph_TradingBot_scenario.json"
+            },
+            "UUPaoTui": {
+              "client_id": "UUPaoTui-gf-v2-isolation-graph",
+              "expected_sha256": "b98ea17b530eb26456226dcce8c4dfbded732c2f19f9508a12fd2d78d28d975e",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "b98ea17b530eb26456226dcce8c4dfbded732c2f19f9508a12fd2d78d28d975e",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/graph_UUPaoTui_scenario.json"
+            },
+            "Weather": {
+              "client_id": "Weather-gf-v2-isolation-graph",
+              "expected_sha256": "644c32c4a238ed801f4bd27a25ab2c2abeaae331d113c4465b646848ca2c7a1e",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "644c32c4a238ed801f4bd27a25ab2c2abeaae331d113c4465b646848ca2c7a1e",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/graph_Weather_scenario.json"
+            }
+          }
+        },
+        "standard": {
+          "arm": "standard",
+          "config": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/mcp_isolation_config.json",
+          "ok": true,
+          "pid": 14420,
+          "servers": {
+            "Calendar": {
+              "client_id": "Calendar-gf-v2-isolation-standard",
+              "expected_sha256": "bc0588d54d81470e230b4ada28b7e937c9924054193a687ee98acac0c9323c1a",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "bc0588d54d81470e230b4ada28b7e937c9924054193a687ee98acac0c9323c1a",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/standard_Calendar_scenario.json"
+            },
+            "GoogleTasks": {
+              "client_id": "GoogleTasks-gf-v2-isolation-standard",
+              "expected_sha256": "4e8b10e52f69110bee2b301a87e30602ebc76f8082664c661490a3cfbeb3ff0e",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "4e8b10e52f69110bee2b301a87e30602ebc76f8082664c661490a3cfbeb3ff0e",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/standard_GoogleTasks_scenario.json"
+            },
+            "TradingBot": {
+              "client_id": "TradingBot-gf-v2-isolation-standard",
+              "expected_sha256": "b3bbff3ff95c11fae05e67df7358e9c761a9b25fa6564f3a7210852e677f7579",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "b3bbff3ff95c11fae05e67df7358e9c761a9b25fa6564f3a7210852e677f7579",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/standard_TradingBot_scenario.json"
+            },
+            "UUPaoTui": {
+              "client_id": "UUPaoTui-gf-v2-isolation-standard",
+              "expected_sha256": "1507863172137f1e8314df130e1487cb4dc8be5b5ed65ddb158ae22cddd0c278",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "1507863172137f1e8314df130e1487cb4dc8be5b5ed65ddb158ae22cddd0c278",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/standard_UUPaoTui_scenario.json"
+            },
+            "Weather": {
+              "client_id": "Weather-gf-v2-isolation-standard",
+              "expected_sha256": "90bb9197621620bb9a638959208591bbbc778348bba564a46234879c1ea0e946",
+              "load_result": "Successfully loaded scenario",
+              "roundtrip_equal": true,
+              "saved_sha256": "90bb9197621620bb9a638959208591bbbc778348bba564a46234879c1ea0e946",
+              "scenario_path": "/home/u2024311031/workspace/envfactory_repro_1p7b/repro_1p7b/graph_frontier/evals/_guided_rl_v2_control/mcp_isolation/standard_Weather_scenario.json"
+            }
+          }
+        }
+      },
+      "complete_isolation_validated": true,
+      "cross_arm_scenarios_distinct": {
+        "Calendar": true,
+        "GoogleTasks": true,
+        "TradingBot": true,
+        "UUPaoTui": true,
+        "Weather": true
+      },
+      "process_exit_codes": {
+        "graph": 0,
+        "standard": 0
+      },
+      "schema": "gf_v2_mcp_isolation_v1",
+      "separate_parent_pids": true,
+      "timestamp": "2026-09-20T16:50:44+0800",
+      "transport_evidence": "Each OS process imports an independent MCPClientManager singleton; relative tool_path creates process-local stdio FastMCP transports; distinct states round-tripped concurrently for all five Frozen300 environments."
+    },
+    "seed": 20260914,
+    "split_distribution": {
+      "diagnosis": 240,
+      "heldout": 60
+    }
+  },
+  "research_questions": {
+    "q1_standard_grpo_vs_dynamic_v1": {
+      "answer": "No overall improvement on Frozen300; only the BFCL point estimate improved.",
+      "bfcl_delta_pp": 1.1199999999999992,
+      "caveat": "This is a historical, unpaired checkpoint comparison; no causal significance claim is made.",
+      "frozen_consumer_reach_delta_pp": -8.873239436619718,
+      "frozen_internal_e2e_delta_pp": -8.873239436619718,
+      "frozen_semantic_delta_pp": -8.0
+    },
+    "q2_additional_graph_reward": {
+      "answer": "No reliable general benefit over the paired Standard-v2 control.",
+      "bfcl_delta_pp": -1.0,
+      "consumer_not_executed_delta_pp": 12.0,
+      "diagnosis240_internal_e2e_delta_pp": 2.460456942003514,
+      "full300_internal_e2e_delta_pp": 1.6901408450704203,
+      "heldout60_internal_e2e_delta_pp": -1.4184397163120561
+    },
+    "q3_enter_full_rl": {
+      "answer": "No.",
+      "gate": "NO-GO",
+      "status": "FULL_RL_NOT_STARTED"
+    }
+  },
+  "schema_version": "guided_rl_v2_benchmark_evaluation_v1",
+  "verdict": "NO-GO"
+}

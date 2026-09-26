@@ -33,8 +33,27 @@ __pycache__/
 /repro_1p7b/cache/
 /repro_1p7b/models/
 /repro_1p7b/checkpoints/
+
+# Remote Graph-Frontier experiment outputs (source and reports stay trackable)
+/repro_1p7b/checkpoints_eval/
+/repro_1p7b/data/graph_frontier_rl_v1_frozen_seed20260920/
+/repro_1p7b/graph_frontier/evals/
+/repro_1p7b/graph_frontier/balanced_preference_v2/
+/repro_1p7b/graph_frontier/balanced_preference_v3/
+/repro_1p7b/graph_frontier/balanced_preference_v3_generation_status
+/repro_1p7b/graph_frontier/preference/
+/repro_1p7b/graph_frontier/preference_runtime/
+/repro_1p7b/graph_frontier/preference_generation_v3/
+/repro_1p7b/graph_frontier/preference_v2/
 # Parameter-aware experiment generated artifacts
 /repro_1p7b/data/parameter_aware_v1/
 /repro_1p7b/data/graph_frontier_dynamic_v1/
+/repro_1p7b/data/envfactory_rl_official/
+/repro_1p7b/data/graph_frontier_dynamic_v2/
+/repro_1p7b/data/graph_frontier_rl_v1/
+/repro_1p7b/data/graph_frontier_rl_v1_generated/
 /repro_1p7b/results/parameter_aware/baseline_features.jsonl
 /repro_1p7b/results/graph_frontier/
+
+# Local patch backups
+*.orig

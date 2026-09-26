@@ -1,0 +1,56 @@
+{
+  "schema_version": "graph_targeted_dpo_pilot_report_v1",
+  "verdict": "PIPELINE-INVALID",
+  "reason": "Task-grouped Graph preference train has 14 clean pairs, below the preregistered 16-pair smoke; only 16 pairs across 8 independent states exist in total.",
+  "preference_data": {
+    "dynamic_v1_rollouts": 672,
+    "candidate_frontier_states": 8,
+    "valid_graph_pairs": 16,
+    "graph_train_pairs": 14,
+    "graph_val_pairs": 2,
+    "standard_pairs": 24,
+    "standard_train_pairs": 22,
+    "standard_val_pairs": 2,
+    "chosen_executable_rate": 1.0,
+    "ambiguous_drop_count": 0,
+    "frozen_300_overlap": 0,
+    "failure_types": {
+      "premature_stop": 16,
+      "wrong_tool": 0,
+      "useless_retry": 0,
+      "wrong_value": 0
+    },
+    "depth": {
+      "depth1": 16,
+      "depth2": 0,
+      "depth3_plus": 0
+    }
+  },
+  "serialization": {
+    "graph_pairs": 14,
+    "graph_preference_tokens": 41275,
+    "standard_pairs": 16,
+    "standard_preference_tokens": 71029,
+    "max_length": 8192,
+    "serialization_drops": 0
+  },
+  "training": {
+    "standard_dpo": "NOT_STARTED",
+    "graph_targeted_dpo": "NOT_STARTED",
+    "reason": "16-pair matched smoke gate failed before optimizer initialization"
+  },
+  "evaluation": {
+    "frozen300": "NOT_RUN",
+    "heldout60": "NOT_RUN",
+    "bfcl_v3_multi_turn_800": "NOT_RUN"
+  },
+  "research_questions": {
+    "q1_standard_dpo_vs_dynamic_v1": "NOT_ANSWERABLE",
+    "q2_graph_vs_standard_consumer_not_executed": "NOT_ANSWERABLE",
+    "q3_scale_graph_preference": "NO_WITH_CURRENT_DATA"
+  },
+  "full_preference_training": "NOT_STARTED",
+  "git_commit": false,
+  "git_push": false
+}
+

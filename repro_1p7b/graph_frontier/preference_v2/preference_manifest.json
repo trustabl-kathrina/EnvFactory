@@ -1,0 +1,13 @@
+{
+  "frozen_300_manifest_sha256": "4ea5304d6f76294d70166260986767795fa0bf3fcf54b6196ee0c3f71e70f51c",
+  "frozen_300_overlap": 0,
+  "frozen_train_sha256": "1faabac69216efd36b4bb02822cec641fd623a6fefa5d581aa123fb441e66eeb",
+  "hashes": {
+    "graph_targeted_pairs_train.jsonl": "a5351282cb8056111e5dd02685cfd3b48bb25063529433ba3b20053c55dc7cf6",
+    "graph_targeted_pairs_val.jsonl": "82d5dcc3b7a6b1d63704b05f68db883cce1fe20af01166deb76e17674c5090ad"
+  },
+  "schema_version": "graph_targeted_preference_manifest_v2",
+  "split_method": "task_id grouped deterministic 90/10",
+  "split_seed": 20260920,
+  "verdict": "PARTIAL-DATA-READY"
+}
